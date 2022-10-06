@@ -1,223 +1,487 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>
+      AUR — pericol și speranță, adevăr și minciună | Neînţelesuri tot mai
+      mari...
+    </title>
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
 
-  <title>
-    
-      AUR — pericol și speranță, adevăr și minciună | Neînţelesuri tot mai mari...
-    
-  </title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/syntax.css">
-  <!-- Use Atom -->
-  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Neînţelesuri tot mai mari..." />
-  <!-- RSS-v2.0
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/syntax.css" />
+    <!-- Use Atom -->
+    <link
+      type="application/atom+xml"
+      rel="alternate"
+      href="https://localhost:4000/feed.xml"
+      title="Neînţelesuri tot mai mari..."
+    />
+    <!-- RSS-v2.0
   <link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="Neînţelesuri tot mai mari... | "/>
   //-->
 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
 
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-  <!-- Google Analytics -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga("create", "UA-162053016-1", "auto");
+      ga("send", "pageview");
+    </script>
 
-  ga('create', 'UA-162053016-1', 'auto');
-  ga('send', 'pageview');
-</script>
+    <!-- Use Jekyll SEO plugin -->
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+    <title>
+      AUR — pericol și speranță, adevăr și minciună | Neînţelesuri tot mai mari…
+    </title>
+    <meta name="generator" content="Jekyll v3.6.3" />
+    <meta
+      property="og:title"
+      content="AUR — pericol și speranță, adevăr și minciună"
+    />
+    <meta name="author" content="David Manda" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      name="description"
+      content="Familia, națiunea, credința creștină și libertatea. Acestea sunt cele 4 valori autoproclamate ale noului partid AUR, care a explodat de nicăieri. Nu sună rău, mai ales pentru o țară în care 92% din populație este creștină. Pe lângă aceste valori, mai auzim un mesaj puternic conservator, opus măsurilor de siguranță COVID, anti-stat, anti-LGBT, sexist (sub umbrela importanței familiei și a rolului femeilor în această privință), anti-Europa. Mai auzim sugestii ușor conspiratiste ce ating o bună parte din români, mai ales în contextul curent — media minte, au fost furați la alegeri, toată lumea e împotriva lor. Și ca să pună punct, deloc impredictibil, îl susțin pe Trump. Ba din câte vedem se inspiră de la el, cu o campanie facebook plină de succes, unde succesul înseamnă că un număr mare de oameni au aflat de AUR și au devenit susținători, iar restul nu am auzit nimic. Mulți nu știam cine sunt până când am văzut rezultatele, iar alții îi știau foarte bine. De asemenea, cultivă o atitudine puternică “noi contra ceilalți” — putere care vine din furie, speranță și o nouă mândrie."
+    />
+    <meta
+      property="og:description"
+      content="Familia, națiunea, credința creștină și libertatea. Acestea sunt cele 4 valori autoproclamate ale noului partid AUR, care a explodat de nicăieri. Nu sună rău, mai ales pentru o țară în care 92% din populație este creștină. Pe lângă aceste valori, mai auzim un mesaj puternic conservator, opus măsurilor de siguranță COVID, anti-stat, anti-LGBT, sexist (sub umbrela importanței familiei și a rolului femeilor în această privință), anti-Europa. Mai auzim sugestii ușor conspiratiste ce ating o bună parte din români, mai ales în contextul curent — media minte, au fost furați la alegeri, toată lumea e împotriva lor. Și ca să pună punct, deloc impredictibil, îl susțin pe Trump. Ba din câte vedem se inspiră de la el, cu o campanie facebook plină de succes, unde succesul înseamnă că un număr mare de oameni au aflat de AUR și au devenit susținători, iar restul nu am auzit nimic. Mulți nu știam cine sunt până când am văzut rezultatele, iar alții îi știau foarte bine. De asemenea, cultivă o atitudine puternică “noi contra ceilalți” — putere care vine din furie, speranță și o nouă mândrie."
+    />
+    <link rel="canonical" href="https://localhost:4000/politics/AUR.html" />
+    <meta
+      property="og:url"
+      content="https://localhost:4000/politics/AUR.html"
+    />
+    <meta property="og:site_name" content="Neînţelesuri tot mai mari…" />
+    <meta
+      property="og:image"
+      content="https://localhost:4000/george_simion.jpg"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="article:published_time"
+      content="2020-12-26T00:00:00+02:00"
+    />
+    <script type="application/ld+json">
+      {
+        "url": "https://localhost:4000/politics/AUR.html",
+        "headline": "AUR — pericol și speranță, adevăr și minciună",
+        "dateModified": "2020-12-26T00:00:00+02:00",
+        "datePublished": "2020-12-26T00:00:00+02:00",
+        "image": "https://localhost:4000/george_simion.jpg",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://localhost:4000/politics/AUR.html"
+        },
+        "author": { "@type": "Person", "name": "David Manda" },
+        "description": "Familia, națiunea, credința creștină și libertatea. Acestea sunt cele 4 valori autoproclamate ale noului partid AUR, care a explodat de nicăieri. Nu sună rău, mai ales pentru o țară în care 92% din populație este creștină. Pe lângă aceste valori, mai auzim un mesaj puternic conservator, opus măsurilor de siguranță COVID, anti-stat, anti-LGBT, sexist (sub umbrela importanței familiei și a rolului femeilor în această privință), anti-Europa. Mai auzim sugestii ușor conspiratiste ce ating o bună parte din români, mai ales în contextul curent — media minte, au fost furați la alegeri, toată lumea e împotriva lor. Și ca să pună punct, deloc impredictibil, îl susțin pe Trump. Ba din câte vedem se inspiră de la el, cu o campanie facebook plină de succes, unde succesul înseamnă că un număr mare de oameni au aflat de AUR și au devenit susținători, iar restul nu am auzit nimic. Mulți nu știam cine sunt până când am văzut rezultatele, iar alții îi știau foarte bine. De asemenea, cultivă o atitudine puternică “noi contra ceilalți” — putere care vine din furie, speranță și o nouă mândrie.",
+        "@type": "BlogPosting",
+        "@context": "https://schema.org"
+      }
+    </script>
+    <!-- End Jekyll SEO tag -->
+  </head>
 
+  <body>
+    <div class="container">
+      <header class="site-header">
+        <h3 class="site-title">
+          <a href="/">Neînţelesuri tot mai mari...</a>
+        </h3>
+        <nav class="menu-list">
+          <a
+            href="https://twitter.com/DavidManda98"
+            class="menu-link"
+            target="_blank"
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
 
-  <!-- Use Jekyll SEO plugin -->
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>AUR — pericol și speranță, adevăr și minciună | Neînţelesuri tot mai mari…</title>
-<meta name="generator" content="Jekyll v3.6.3" />
-<meta property="og:title" content="AUR — pericol și speranță, adevăr și minciună" />
-<meta name="author" content="David Manda" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Familia, națiunea, credința creștină și libertatea. Acestea sunt cele 4 valori autoproclamate ale noului partid AUR, care a explodat de nicăieri. Nu sună rău, mai ales pentru o țară în care 92% din populație este creștină. Pe lângă aceste valori, mai auzim un mesaj puternic conservator, opus măsurilor de siguranță COVID, anti-stat, anti-LGBT, sexist (sub umbrela importanței familiei și a rolului femeilor în această privință), anti-Europa. Mai auzim sugestii ușor conspiratiste ce ating o bună parte din români, mai ales în contextul curent — media minte, au fost furați la alegeri, toată lumea e împotriva lor. Și ca să pună punct, deloc impredictibil, îl susțin pe Trump. Ba din câte vedem se inspiră de la el, cu o campanie facebook plină de succes, unde succesul înseamnă că un număr mare de oameni au aflat de AUR și au devenit susținători, iar restul nu am auzit nimic. Mulți nu știam cine sunt până când am văzut rezultatele, iar alții îi știau foarte bine. De asemenea, cultivă o atitudine puternică “noi contra ceilalți” — putere care vine din furie, speranță și o nouă mândrie." />
-<meta property="og:description" content="Familia, națiunea, credința creștină și libertatea. Acestea sunt cele 4 valori autoproclamate ale noului partid AUR, care a explodat de nicăieri. Nu sună rău, mai ales pentru o țară în care 92% din populație este creștină. Pe lângă aceste valori, mai auzim un mesaj puternic conservator, opus măsurilor de siguranță COVID, anti-stat, anti-LGBT, sexist (sub umbrela importanței familiei și a rolului femeilor în această privință), anti-Europa. Mai auzim sugestii ușor conspiratiste ce ating o bună parte din români, mai ales în contextul curent — media minte, au fost furați la alegeri, toată lumea e împotriva lor. Și ca să pună punct, deloc impredictibil, îl susțin pe Trump. Ba din câte vedem se inspiră de la el, cu o campanie facebook plină de succes, unde succesul înseamnă că un număr mare de oameni au aflat de AUR și au devenit susținători, iar restul nu am auzit nimic. Mulți nu știam cine sunt până când am văzut rezultatele, iar alții îi știau foarte bine. De asemenea, cultivă o atitudine puternică “noi contra ceilalți” — putere care vine din furie, speranță și o nouă mândrie." />
-<link rel="canonical" href="http://localhost:4000/politics/AUR.html" />
-<meta property="og:url" content="http://localhost:4000/politics/AUR.html" />
-<meta property="og:site_name" content="Neînţelesuri tot mai mari…" />
-<meta property="og:image" content="http://localhost:4000/george_simion.jpg" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-12-26T00:00:00+02:00" />
-<script type="application/ld+json">
-{"url":"http://localhost:4000/politics/AUR.html","headline":"AUR — pericol și speranță, adevăr și minciună","dateModified":"2020-12-26T00:00:00+02:00","datePublished":"2020-12-26T00:00:00+02:00","image":"http://localhost:4000/george_simion.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/politics/AUR.html"},"author":{"@type":"Person","name":"David Manda"},"description":"Familia, națiunea, credința creștină și libertatea. Acestea sunt cele 4 valori autoproclamate ale noului partid AUR, care a explodat de nicăieri. Nu sună rău, mai ales pentru o țară în care 92% din populație este creștină. Pe lângă aceste valori, mai auzim un mesaj puternic conservator, opus măsurilor de siguranță COVID, anti-stat, anti-LGBT, sexist (sub umbrela importanței familiei și a rolului femeilor în această privință), anti-Europa. Mai auzim sugestii ușor conspiratiste ce ating o bună parte din români, mai ales în contextul curent — media minte, au fost furați la alegeri, toată lumea e împotriva lor. Și ca să pună punct, deloc impredictibil, îl susțin pe Trump. Ba din câte vedem se inspiră de la el, cu o campanie facebook plină de succes, unde succesul înseamnă că un număr mare de oameni au aflat de AUR și au devenit susținători, iar restul nu am auzit nimic. Mulți nu știam cine sunt până când am văzut rezultatele, iar alții îi știau foarte bine. De asemenea, cultivă o atitudine puternică “noi contra ceilalți” — putere care vine din furie, speranță și o nouă mândrie.","@type":"BlogPosting","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+          <a
+            href="https://www.facebook.com/manda.david.98"
+            class="menu-link"
+            target="_blank"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
 
+          <a
+            href="https://www.instagram.com/manda.david.98/"
+            class="menu-link"
+            target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </nav>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-content">
+            <a
+              href="https://twitter.com/DavidManda98"
+              class="menu-link"
+              target="_blank"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
 
-</head>
+            <a
+              href="https://www.facebook.com/manda.david.98"
+              class="menu-link"
+              target="_blank"
+              ><i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
 
+            <a
+              href="https://www.instagram.com/manda.david.98/"
+              class="menu-link"
+              target="_blank"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </header>
 
-<body>
+      <div class="posts-wrapper">
+        <div class="page-content">
+          <h1>AUR — pericol și speranță, adevăr și minciună</h1>
 
-<div class="container">
-  <header class="site-header">
-  <h3 class="site-title">
-    <a href="/">Neînţelesuri tot mai mari...</a>
-  </h3>
-  <nav class="menu-list">
-    
+          <span class="post-date"> Publicat la 26-12-2020 de David Manda </span>
 
-    
-      <a href="https://twitter.com/DavidManda98" class="menu-link" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    
-      <a href="https://www.facebook.com/manda.david.98" class="menu-link" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    
-      <a href="https://www.instagram.com/manda.david.98/" class="menu-link" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    
-  </nav>
-  <div class="dropdown">
-    <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-    <div class="dropdown-content">
-      
+          <article>
+            <p>
+              Familia, națiunea, credința creștină și libertatea. Acestea sunt
+              cele 4 valori autoproclamate ale noului partid AUR, care a
+              explodat de nicăieri. Nu sună rău, mai ales pentru o țară în care
+              92% din populație este creștină. Pe lângă aceste valori, mai auzim
+              un mesaj puternic conservator, opus măsurilor de siguranță COVID,
+              anti-stat, anti-LGBT, sexist (sub umbrela importanței familiei și
+              a rolului femeilor în această privință), anti-Europa. Mai auzim
+              sugestii ușor conspiratiste ce ating o bună parte din români, mai
+              ales în contextul curent — media minte, au fost furați la alegeri,
+              toată lumea e împotriva lor. Și ca să pună punct, deloc
+              impredictibil, îl susțin pe Trump. Ba din câte vedem se inspiră de
+              la el, cu o campanie facebook plină de succes, unde succesul
+              înseamnă că un număr mare de oameni au aflat de AUR și au devenit
+              susținători, iar restul nu am auzit nimic. Mulți nu știam cine
+              sunt până când am văzut rezultatele, iar alții îi știau foarte
+              bine. De asemenea, cultivă o atitudine puternică
+              <em>“noi contra ceilalți”</em> — putere care vine din furie,
+              speranță și o nouă mândrie.
+            </p>
 
-      
-        <a href="https://twitter.com/DavidManda98" class="menu-link" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      
-        <a href="https://www.facebook.com/manda.david.98" class="menu-link" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      
-        <a href="https://www.instagram.com/manda.david.98/" class="menu-link" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      
+            <p>
+              Am simțit această putere când am trecut pe lângă o adunare AUR în
+              centrul Craiovei, unde am fost atras de oameni fluturând steagul
+              României. Apropiindu-mă, am văzut sigla AUR pe drapel și pe George
+              Simion cu un microfon în mână. În ciuda modului de exprimare care
+              lăsa de dorit, avea putere în cuvinte. Vedeam femei și bărbați în
+              jur care îl ascultau cu ardoare, animați de cuvintele lui.
+              <em>“A venit timpul nostru”</em>,
+              <em>“în sfârșit suntem auziți”</em>,
+              <em>“nu vă mai fie teamă”</em>,
+              <em>“telefonul meu este mereu deschis pentru voi”</em>. Era o mică
+              vibrație în aer ce m-a impresionat și înfricoșat. Am decis să mă
+              sustrag în timp ce oamenii din jur au început să scandeze:
+              <em>“AUR! AUR!”</em>.
+            </p>
+
+            <p><img src="/assets/img/george_simion.jpg" alt="image" /></p>
+
+            <p>
+              Cred că România se află într-un moment tare propice pentru această
+              nouă mișcare și sunt tare curios care va fi efectul ei. Cred că
+              poate să aibă un efect pozitiv, poate să însuflețească și să
+              motiveze, dar cred că poate să și dezbine și să creeze tensiuni.
+              Nu prin opiniile politice, nu prin opiniile execrabile ale lui
+              Sorin Lavric despre femei și nici prin incompetența vădită a unor
+              membri. Cred că pot să facă mult rău dezbinând România și mai tare
+              — atât în plan politic cât și moral. Pot face mult rău prin
+              această retorică <em>“noi contra ei”</em>, prin nutrirea de frică
+              și ură pentru autorități, occident, schimbare și valori seculare.
+              De-asta scriu acest articol. Cred că au puterea să dezbine, iar
+              reacția noastră a tuturor va decide dacă îi lăsăm să ne dea țara
+              peste cap și mai tare. Prin reacția noastră la această nouă
+              mișcare putem să evităm o posibilă dezbinare și să ajutam la
+              crearea unei Românii mai unite și mai motivate.
+            </p>
+
+            <p>Contextul propice AUR</p>
+
+            <p>
+              România este o țară conservatoare. Este cea mai religioasă țară
+              din UE, cu 92% din populație identificându-se cu religia creștină.
+              Prin contrast totuși, ne aflăm într-un mediu european și
+              internațional care pare că vrea să le schimbe pe toate. În care
+              conservatorismul aproape că te pune din start pe partea greșită
+              într-o conversație morală, iar România pare că se uita în jur ca
+              la niște nebuni care vor să arunce toate normele în aer. Mulți
+              români se uită cu dispreț și teamă în exterior și vor să își
+              păstreze valorile. Cred că în acest an, frica de presiunile
+              externe a prins picioare. În timpul acestei pandemii ne-am trezit
+              dintr-odată într-un context cu adevărat global în care măsurile,
+              regulile și știrile veneau în mare parte din exterior. Am fost
+              închiși în casă, dar conectați mai mult decât niciodată în sfera
+              online și am simțit puternic efectul ei global. Reacția? Mulți
+              români s-au speriat și s-au revoltat. Nu le-a plăcut să li se
+              spună ce să facă, nu au vrut să fie controlați de
+              <em>“ceilalți”</em> cu interesele lor care vor doar să profite pe
+              seama românului. Așa că s-au întors la ai lor. Au început să aibă
+              mult scepticism față de media și au început să asculte sursele de
+              încredere - tiriștii români care fac live-uri pe drumul dinspre
+              Italia, care ne spuneau ei cum stă treaba, de fapt, acolo.
+              Neîncrederea și teama au crescut printre români, care nu mai vor
+              să li se spună ce să facă din exterior - da’ ce, noi suntem
+              proști?
+            </p>
+
+            <p>
+              Ei, în acest context apare AUR. Apare online, unde suntem toți
+              acum, și apare pe lângă cei mai pasionați dintre noi - cei de la
+              protestele anti-măști și anti-5G. Apare și ne spune că nu trebuie
+              să ne temem de Occident — trebuie să se teamă ei de noi. Apare și
+              ne spune că media ne minte, ne fură și vrea să ne controleze. Ne
+              spune că o să ne apere de occident, o să ne aducă moralitatea
+              înapoi și o să ne lase să fim români mândri și liberi. Ne face să
+              ne simțim auziți, îndreptățiți și liberi. Dă o voce frustrărilor.
+              Atinge puncte sensibile pentru familii dezbinate, promițând o
+              națiune unită, aici și peste hotare. Promite siguranță și
+              normalitate. Din când în când mai vorbește și de opiniile sale
+              politice, dar asta e în plan secund. Și nici nu contează. Nu
+              pentru ele au votat oamenii. Opinii politice au toți, și omului de
+              rând nu-i mai pasă. Omului de rând îi pasă ce simte. Se simte
+              înțeles? Se simte în siguranță? Se simte animat de mesaj? Iar în
+              această discrepanță între acasă și Occident, conservatorism și
+              liberalism, libertate sau conformare, AUR lovește niște puncte
+              sensibile. De-asta au avut aproape 10% din voturi și de-asta mă
+              aștept să aibă și mai multă susținere.
+            </p>
+
+            <p>Care e problema?</p>
+
+            <p>
+              Poate din ce ați citit până acum, AUR nu sună a fi un partid așa
+              de rău. Sunt motivați, pasionați, vorbesc cu putere și se luptă
+              pentru valori pe care poate le aveți și voi. Se luptă pentru unele
+              valori pe care le am și eu. Poate ați auzit niște discursuri de la
+              George Simion și chiar au aprins ceva în voi. Deci, care este
+              problema?
+            </p>
+
+            <p>
+              Nu, problema nu este că Sorin Lavric e frustrat sexual (cel cu
+              <em>“femeia nu poate fi admirată, cel mult dorită”</em>). Nici că
+              AUR nu consideră asta o problemă destul de mare încât să nu se
+              lase reprezentați de un om ca el. Problema mare este că mesajul
+              AUR este unul de dezbinare. AUR lovește punctele sensibile ale
+              unor oameni conservatori, în principal adulți, care par să admire
+              și să fie animați de mesajul lor. În același timp, AUR dezgustă și
+              sperie o bună parte din populație, partea mai tânără, mai
+              liberală, occidentală, care crede că știe mai bine decât
+              <em>“ăștia rămași în urmă”</em>. Unora le inspiră înțelegere și
+              siguranță, altora le inspiră furie, dezgust, teamă și batjocură.
+              Iar marea problemă este că mesajul AUR este formulat în așa fel
+              încât să înflorească în acest context. George Simion este foarte
+              conștient de reacția pe care o provoacă. Acestea sunt vorbele lui,
+              din următorul videoclip, la minutul 3:45:
+              <em
+                >“Sunt mândru de alegerea făcută de voi, să fiți și voi mândri,
+                că o să încerce în fel și chip să vă facă să vă simțiți
+                rușinați”</em
+              >. Nu e rău să le spui oamenilor să fie mândri de ei, dar mesajul
+              lui este încărcat cu animozitate față de <em>“ceilalți”</em>. Știe
+              că vor fi luați în derâdere, așa cum sunt deja, și folosește asta
+              să pună paie pe foc.
+              <a
+                href="https://www.facebook.com/george.simion.unire/posts/2938234546397696"
+                >https://www.facebook.com/george.simion.unire/posts/2938234546397696</a
+              >
+            </p>
+
+            <p>
+              Titlul acestei postări este
+              <em
+                >“Nu, bulibașii pe care îi arată la televiziuni NU sunt membri
+                AUR. În schimb cei din următoarele imagini sunt! ÎNCHIDEȚI
+                TELEVIZOARELE!”</em
+              >. Cred că spune asta pe bună dreptate. Înainte să citesc mai
+              multe despre ei, TOT ce am auzit a fost negativ. Toate rețelele de
+              socializare au sărit în sus în jurul citatelor revoltătoare și
+              opiniilor de extremă dreaptă ce curg din acest partid. Dar această
+              încurajare la neîncredere în media este una toxică. Cu toate
+              lipsurile ei vădite, media face o treaba mult mai bună la a-ți
+              arăta ce se întâmplă în lume decât cercul tău de pe facebook.
+              Acest mesaj de <em>“fake news”</em> a fost pus înainte cu
+              încredere de către Donald Trump, care a reușit în 4 ani să crească
+              și mai mult prăpastia într-o țară deja puternic divizată. Nu de
+              asta avem nevoie în România - de oameni care trăiesc în realități
+              diferite și contradictorii, care nu mai au încredere în nimeni și
+              nimic și care îi privesc cu dispreț și teamă pe cei din jur care
+              nu le împărtășesc viziunea despre lume. Teama curge în ambele
+              direcții și un mesaj care se folosește de această teamă e unul
+              toxic. AUR este o sămânță picată într-o crăpătură a societății
+              române. A prins ceva ploaie și a încolțit, iar acum dă să prindă
+              rădăcini și să lărgească crăpătura unde a încolțit. Ăsta e ultimul
+              lucru de care are nevoie România acum: încă o dezbinare politică,
+              de data aceasta pe motive personale, teologice și morale.
+            </p>
+
+            <p>Mesajul meu</p>
+
+            <p>
+              Indiferent de opinia ta politică, indiferent dacă ești animat de
+              AUR sau îi privești cu dezgust, nu contribui la acest cerc vicios
+              al dezbinării. Nu privi cu dispreț pe cei pe care nu îi înțelegi.
+              Nu ridiculiza susținătorii AUR. Nu îi da exemple lui George Simion
+              să arate că lumea e împotriva AUR și nu îi lăsa să nutrească frică
+              și furie în urmăritorii lui. Opune-te acestui mesaj de dezbinare,
+              informează-te și fii atent la mediul politic instabil și
+              schimbător în care ne aflăm. Ține minte. Avem nevoie de o Românie
+              unită. Chiar dacă nu îți place, România e o țară conservatoare, nu
+              foarte educată, dar tare religioasă. Ia asta în calcul, și dacă
+              vrei o Românie unită, ţine cont de ea. Țara noastră are vădit o
+              nevoie care este împlinită de această mișcare nouă. Haideți să
+              apreciem ce este de apreciat. Haideți să apreciem dedicația,
+              pasiunea, puterea de a motiva, puterea de a da speranță și
+              apropierea față de oameni. Eu personal sunt convins că George
+              Simion, care chiar mi-a atras atenția, este un om sincer și care
+              iubește România. Îl apreciez pentru asta. Și sper să dea mai multă
+              viață unei națiuni moarte politic. Dar domnule Simion, dacă se
+              întâmplă să ajungă acest mesaj la dvs., vă rog gândiți-vă mai mult
+              la ce înseamnă o Românie unită. Va rog fiți atent la mesajul
+              dumneavoastră. Dacă vă uitați în jur, puteți vedea cum acest mesaj
+              poate să dezbine o nație. Vă rog să vorbiți cu putere pentru toți
+              românii, și cei cu care nu sunteți de acord, și cei care nu susțin
+              și nu vor susține AUR. Nu promovați un mesaj de neîncredere și
+              furie. Asta înseamnă să fii lider și asta înseamnă să faci o țară
+              mai bună. Vă înțeleg pasiunea, dar vă rog să nu o lăsați să vă
+              întunece privirea.
+            </p>
+
+            <p>
+              În încheiere vă las cu un apel la informare, înțelegere și
+              compasiune. Și vă las cu acest scurt reportaj Recorder care arată
+              realitatea mai bine decât pot să o exprim eu. Este o realitate
+              nuanțată care mie îmi dă și teamă, și speranță.
+              <a href="https://recorder.ro/video-portretul-votantului-aur/"
+                >https://recorder.ro/video-portretul-votantului-aur/</a
+              >
+            </p>
+          </article>
+
+          <div class="post-share">
+            <div class="post-date">Dacă ți-a placut, trimite și altora!</div>
+            <div class="sharing-icons">
+              <a
+                href="https://twitter.com/intent/tweet?text=AUR — pericol și speranță, adevăr și minciună&amp;url=/politics/AUR.html"
+                target="_blank"
+                ><i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=/politics/AUR.html&amp;title=AUR — pericol și speranță, adevăr și minciună"
+                target="_blank"
+                ><i class="fa fa-facebook" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://plus.google.com/share?url=/politics/AUR.html"
+                target="_blank"
+                ><i class="fa fa-google-plus" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="related">
+            <h2>S-ar putea să iți placă și...</h2>
+
+            <ul class="related-posts">
+              <li>
+                <h3>
+                  <a href="/philosophy/religion/Alan_Watts_oriental.html">
+                    <div class="related-thumbnail">
+                      <img
+                        src="https://localhost:4000/assets/img/Alan-Watts.png"
+                      />
+                    </div>
+                    <div class="related-title">
+                      Alan Watts - Relevanța Filozofiei Orientale
+                    </div>
+                    <!--<small>July 6, 2022</small>-->
+                  </a>
+                </h3>
+              </li>
+
+              <li>
+                <h3>
+                  <a href="/philosophy/religion/religion.html">
+                    <div class="related-thumbnail">
+                      <img
+                        src="https://localhost:4000/assets/img/religion.png"
+                      />
+                    </div>
+                    <div class="related-title">The pointless debate</div>
+                    <!--<small>March 28, 2021</small>-->
+                  </a>
+                </h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <a
+          href="https://twitter.com/DavidManda98"
+          class="menu-link"
+          target="_blank"
+          ><i class="fa fa-twitter" aria-hidden="true"></i
+        ></a>
+
+        <a
+          href="https://www.facebook.com/manda.david.98"
+          class="menu-link"
+          target="_blank"
+          ><i class="fa fa-facebook" aria-hidden="true"></i
+        ></a>
+
+        <a
+          href="https://www.instagram.com/manda.david.98/"
+          class="menu-link"
+          target="_blank"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+      </footer>
     </div>
-  </div>
-</header>
-
-  <div class="posts-wrapper">
-    <div class="page-content">
-  <h1>
-    AUR — pericol și speranță, adevăr și minciună
-  </h1>
-
-  <span class="post-date">
-    Publicat la
-    
-    26-12-2020
-    de
-    
-      David Manda
-    
-  </span>
-
-  <article>
-    <p>Familia, națiunea, credința creștină și libertatea. Acestea sunt cele 4 valori autoproclamate ale noului partid AUR, care a explodat de nicăieri. Nu sună rău, mai ales pentru o țară în care 92% din populație este creștină. Pe lângă aceste valori, mai auzim un mesaj puternic conservator, opus măsurilor de siguranță COVID, anti-stat, anti-LGBT, sexist (sub umbrela importanței familiei și a rolului femeilor în această privință), anti-Europa. Mai auzim sugestii ușor conspiratiste ce ating o bună parte din români, mai ales în contextul curent — media minte, au fost furați la alegeri, toată lumea e împotriva lor. Și ca să pună punct, deloc impredictibil, îl susțin pe Trump. Ba din câte vedem se inspiră de la el, cu o campanie facebook plină de succes, unde succesul înseamnă că un număr mare de oameni au aflat de AUR și au devenit susținători, iar restul nu am auzit nimic. Mulți nu știam cine sunt până când am văzut rezultatele, iar alții îi știau foarte bine. De asemenea, cultivă o atitudine puternică <em>“noi contra ceilalți”</em> — putere care vine din furie, speranță și o nouă mândrie.</p>
-
-<p>Am simțit această putere când am trecut pe lângă o adunare AUR în centrul Craiovei, unde am fost atras de oameni fluturând steagul României. Apropiindu-mă, am văzut sigla AUR pe drapel și pe George Simion cu un microfon în mână. În ciuda modului de exprimare care lăsa de dorit, avea putere în cuvinte. Vedeam femei și bărbați în jur care îl ascultau cu ardoare, animați de cuvintele lui. <em>“A venit timpul nostru”</em>, <em>“în sfârșit suntem auziți”</em>, <em>“nu vă mai fie teamă”</em>, <em>“telefonul meu este mereu deschis pentru voi”</em>. Era o mică vibrație în aer ce m-a impresionat și înfricoșat. Am decis să mă sustrag în timp ce oamenii din jur au început să scandeze: <em>“AUR! AUR!”</em>.</p>
-
-<p><img src="/assets/img/george_simion.jpg" alt="image" /></p>
-
-<p>Cred că România se află într-un moment tare propice pentru această nouă mișcare și sunt tare curios care va fi efectul ei. Cred că poate să aibă un efect pozitiv, poate să însuflețească și să motiveze, dar cred că poate să și dezbine și să creeze tensiuni. Nu prin opiniile politice, nu prin opiniile execrabile ale lui Sorin Lavric despre femei și nici prin incompetența vădită a unor membri. Cred că pot să facă mult rău dezbinând România și mai tare — atât în plan politic cât și moral. Pot face mult rău prin această retorică <em>“noi contra ei”</em>, prin nutrirea de frică și ură pentru autorități, occident, schimbare și valori seculare. De-asta scriu acest articol. Cred că au puterea să dezbine, iar reacția noastră a tuturor va decide dacă îi lăsăm să ne dea țara peste cap și mai tare. Prin reacția noastră la această nouă mișcare putem să evităm o posibilă dezbinare și să ajutam la crearea unei Românii mai unite și mai motivate.</p>
-
-<p>Contextul propice AUR</p>
-
-<p>România este o țară conservatoare. Este cea mai religioasă țară din UE, cu 92% din populație identificându-se cu religia creștină. Prin contrast totuși, ne aflăm într-un mediu european și internațional care pare că vrea să le schimbe pe toate. În care conservatorismul aproape că te pune din start pe partea greșită într-o conversație morală, iar România pare că se uita în jur ca la niște nebuni care vor să arunce toate normele în aer. Mulți români se uită cu dispreț și teamă în exterior și vor să își păstreze valorile. Cred că în acest an, frica de presiunile externe a prins picioare. În timpul acestei pandemii ne-am trezit dintr-odată într-un context cu adevărat global în care măsurile, regulile și știrile veneau în mare parte din exterior. Am fost închiși în casă, dar conectați mai mult decât niciodată în sfera online și am simțit puternic efectul ei global. Reacția? Mulți români s-au speriat și s-au revoltat. Nu le-a plăcut să li se spună ce să facă, nu au vrut să fie controlați de <em>“ceilalți”</em> cu interesele lor care vor doar să profite pe seama românului. Așa că s-au întors la ai lor. Au început să aibă mult scepticism față de media și au început să asculte sursele de încredere - tiriștii români care fac live-uri pe drumul dinspre Italia, care ne spuneau ei cum stă treaba, de fapt, acolo. Neîncrederea și teama au crescut printre români, care nu mai vor să li se spună ce să facă din exterior - da’ ce, noi suntem proști?</p>
-
-<p>Ei, în acest context apare AUR. Apare online, unde suntem toți acum, și apare pe lângă cei mai pasionați dintre noi - cei de la protestele anti-măști și anti-5G. Apare și ne spune că nu trebuie să ne temem de Occident — trebuie să se teamă ei de noi. Apare și ne spune că media ne minte, ne fură și vrea să ne controleze. Ne spune că o să ne apere de occident, o să ne aducă moralitatea înapoi și o să ne lase să fim români mândri și liberi. Ne face să ne simțim auziți, îndreptățiți și liberi. Dă o voce frustrărilor. Atinge puncte sensibile pentru familii dezbinate, promițând o națiune unită, aici și peste hotare. Promite siguranță și normalitate. Din când în când mai vorbește și de opiniile sale politice, dar asta e în plan secund. Și nici nu contează. Nu pentru ele au votat oamenii. Opinii politice au toți, și omului de rând nu-i mai pasă. Omului de rând îi pasă ce simte. Se simte înțeles? Se simte în siguranță? Se simte animat de mesaj? Iar în această discrepanță între acasă și Occident, conservatorism și liberalism, libertate sau conformare, AUR lovește niște puncte sensibile. De-asta au avut aproape 10% din voturi și de-asta mă aștept să aibă și mai multă susținere.</p>
-
-<p>Care e problema?</p>
-
-<p>Poate din ce ați citit până acum, AUR nu sună a fi un partid așa de rău. Sunt motivați, pasionați, vorbesc cu putere și se luptă pentru valori pe care poate le aveți și voi. Se luptă pentru unele valori pe care le am și eu. Poate ați auzit niște discursuri de la George Simion și chiar au aprins ceva în voi. Deci, care este problema?</p>
-
-<p>Nu, problema nu este că Sorin Lavric e frustrat sexual (cel cu <em>“femeia nu poate fi admirată, cel mult dorită”</em>). Nici că AUR nu consideră asta o problemă destul de mare încât să nu se lase reprezentați de un om ca el. Problema mare este că mesajul AUR este unul de dezbinare. AUR lovește punctele sensibile ale unor oameni conservatori, în principal adulți, care par să admire și să fie animați de mesajul lor. În același timp, AUR dezgustă și sperie o bună parte din populație, partea mai tânără, mai liberală, occidentală, care crede că știe mai bine decât <em>“ăștia rămași în urmă”</em>. Unora le inspiră înțelegere și siguranță, altora le inspiră furie, dezgust, teamă și batjocură. Iar marea problemă este că mesajul AUR este formulat în așa fel încât să înflorească în acest context. George Simion este foarte conștient de reacția pe care o provoacă. Acestea sunt vorbele lui, din următorul videoclip, la minutul 3:45: <em>“Sunt mândru de alegerea făcută de voi, să fiți și voi mândri, că o să încerce în fel și chip să vă facă să vă simțiți rușinați”</em>. Nu e rău să le spui oamenilor să fie mândri de ei, dar mesajul lui este încărcat cu animozitate față de <em>“ceilalți”</em>. Știe că vor fi luați în derâdere, așa cum sunt deja, și folosește asta să pună paie pe foc.
-<a href="https://www.facebook.com/george.simion.unire/posts/2938234546397696">https://www.facebook.com/george.simion.unire/posts/2938234546397696</a></p>
-
-<p>Titlul acestei postări este <em>“Nu, bulibașii pe care îi arată la televiziuni NU sunt membri AUR. În schimb cei din următoarele imagini sunt! ÎNCHIDEȚI TELEVIZOARELE!”</em>. Cred că spune asta pe bună dreptate. Înainte să citesc mai multe despre ei, TOT ce am auzit a fost negativ. Toate rețelele de socializare au sărit în sus în jurul citatelor revoltătoare și opiniilor de extremă dreaptă ce curg din acest partid. Dar această încurajare la neîncredere în media este una toxică. Cu toate lipsurile ei vădite, media face o treaba mult mai bună la a-ți arăta ce se întâmplă în lume decât cercul tău de pe facebook. Acest mesaj de <em>“fake news”</em> a fost pus înainte cu încredere de către Donald Trump, care a reușit în 4 ani să crească și mai mult prăpastia într-o țară deja puternic divizată. Nu de asta avem nevoie în România - de oameni care trăiesc în realități diferite și contradictorii, care nu mai au încredere în nimeni și nimic și care îi privesc cu dispreț și teamă pe cei din jur care nu le împărtășesc viziunea despre lume. Teama curge în ambele direcții și un mesaj care se folosește de această teamă e unul toxic. AUR este o sămânță picată într-o crăpătură a societății române. A prins ceva ploaie și a încolțit, iar acum dă să prindă rădăcini și să lărgească crăpătura unde a încolțit. Ăsta e ultimul lucru de care are nevoie România acum: încă o dezbinare politică, de data aceasta pe motive personale, teologice și morale.</p>
-
-<p>Mesajul meu</p>
-
-<p>Indiferent de opinia ta politică, indiferent dacă ești animat de AUR sau îi privești cu dezgust, nu contribui la acest cerc vicios al dezbinării. Nu privi cu dispreț pe cei pe care nu îi înțelegi. Nu ridiculiza susținătorii AUR. Nu îi da exemple lui George Simion să arate că lumea e împotriva AUR și nu îi lăsa să nutrească frică și furie în urmăritorii lui. Opune-te acestui mesaj de dezbinare, informează-te și fii atent la mediul politic instabil și schimbător în care ne aflăm. Ține minte. Avem nevoie de o Românie unită. Chiar dacă nu îți place, România e o țară conservatoare, nu foarte educată, dar tare religioasă. Ia asta în calcul, și dacă vrei o Românie unită, ţine cont de ea. Țara noastră are vădit o nevoie care este împlinită de această mișcare nouă. Haideți să apreciem ce este de apreciat. Haideți să apreciem dedicația, pasiunea, puterea de a motiva, puterea de a da speranță și apropierea față de oameni. Eu personal sunt convins că George Simion, care chiar mi-a atras atenția, este un om sincer și care iubește România. Îl apreciez pentru asta. Și sper să dea mai multă viață unei națiuni moarte politic. Dar domnule Simion, dacă se întâmplă să ajungă acest mesaj la dvs., vă rog gândiți-vă mai mult la ce înseamnă o Românie unită. Va rog fiți atent la mesajul dumneavoastră. Dacă vă uitați în jur, puteți vedea cum acest mesaj poate să dezbine o nație. Vă rog să vorbiți cu putere pentru toți românii, și cei cu care nu sunteți de acord, și cei care nu susțin și nu vor susține AUR. Nu promovați un mesaj de neîncredere și furie. Asta înseamnă să fii lider și asta înseamnă să faci o țară mai bună. Vă înțeleg pasiunea, dar vă rog să nu o lăsați să vă întunece privirea.</p>
-
-<p>În încheiere vă las cu un apel la informare, înțelegere și compasiune. Și vă las cu acest scurt reportaj Recorder care arată realitatea mai bine decât pot să o exprim eu. Este o realitate nuanțată care mie îmi dă și teamă, și speranță. <a href="https://recorder.ro/video-portretul-votantului-aur/">https://recorder.ro/video-portretul-votantului-aur/</a></p>
-
-  </article>
-
-  <div class="post-share">
-    <div class="post-date">Dacă ți-a placut, trimite și altora!</div>
-    <div class="sharing-icons">
-      <a href="https://twitter.com/intent/tweet?text=AUR — pericol și speranță, adevăr și minciună&amp;url=/politics/AUR.html" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=/politics/AUR.html&amp;title=AUR — pericol și speranță, adevăr și minciună" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href="https://plus.google.com/share?url=/politics/AUR.html" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-    </div>
-  </div>
-
-  <div class="related">
-    <h2>S-ar putea să iți placă și...</h2>
-    
-    <ul class="related-posts">
-      
-        
-          
-            <li>
-              <h3>
-                <a href="/philosophy/religion/Alan_Watts_oriental.html">
-                  <div class="related-thumbnail">
-                    
-                      <img src="http://localhost:4000/assets/img/Alan-Watts.png">
-                    
-                  </div>
-                  <div class="related-title">
-                    Alan Watts - Relevanța Filozofiei Orientale
-                  </div>
-                  <!--<small>July 6, 2022</small>-->
-                </a>
-              </h3>
-            </li>
-            
-          
-        
-          
-            <li>
-              <h3>
-                <a href="/philosophy/religion/religion.html">
-                  <div class="related-thumbnail">
-                    
-                      <img src="http://localhost:4000/assets/img/religion.png">
-                    
-                  </div>
-                  <div class="related-title">
-                    The pointless debate
-                  </div>
-                  <!--<small>March 28, 2021</small>-->
-                </a>
-              </h3>
-            </li>
-            
-          
-        
-      
-    </ul>
-  </div>
-
-  
-
-</div>
-
-  </div>
-  <footer class="footer">
-  
-    <a href="https://twitter.com/DavidManda98" class="menu-link" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-  
-    <a href="https://www.facebook.com/manda.david.98" class="menu-link" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-  
-    <a href="https://www.instagram.com/manda.david.98/" class="menu-link" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-  
-</footer>
-
-</div>
-
-</body>
+  </body>
 </html>

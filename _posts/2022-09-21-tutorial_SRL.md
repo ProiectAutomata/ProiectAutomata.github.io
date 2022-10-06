@@ -177,7 +177,7 @@ Declarația se completează după următorul model:[model orientativ declarație
 
 Mențiuni:
 
-- La secțiunea _"Modalitatea în care se exercită controlul asupra societății/persoanei juridice"_ în majoritatea cazurilor se selectează prima variantă, adică _"potrivit prevederilor art. 4 alin. (2) lit. a), pct.1 din Legea nr.129/2019;"_. Acesta este cazul în care beneficiarul real menționat (adică tu) deține societatea și astfel își exercită controlul asupra ei. [Aici](<http://www.onpcsb.ro/pdf/Legea%20129%20din%202019%20fiv%20de%20la%2001.01.2022%20(Legea%20315%20din%202021)>) poți citi nr.129/2019 Art. 4 dacă vrei să înțelegi singur mai bine.
+- La secțiunea _"Modalitatea în care se exercită controlul asupra societății/persoanei juridice"_ în majoritatea cazurilor se selectează prima variantă, adică _"potrivit prevederilor art. 4 alin. (2) lit. a), pct.1 din Legea nr.129/2019;"_. Acesta este cazul în care beneficiarul real menționat (adică tu) deține societatea și astfel își exercită controlul asupra ei. [Aici](<https://www.onpcsb.ro/pdf/Legea%20129%20din%202019%20fiv%20de%20la%2001.01.2022%20(Legea%20315%20din%202021)>) poți citi nr.129/2019 Art. 4 dacă vrei să înțelegi singur mai bine.
 - Imediat sub, la secțiunea _"Descriere"_ se va completa "Directă".
   ![image](/assets/SRL/img/img11.png)
 
