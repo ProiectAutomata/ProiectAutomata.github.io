@@ -33,7 +33,7 @@ Pe scurt, recomandarea mea este:
 
 # 2. Completează cererea de înregistrare
 
-Accesează [Înregistrare în RC și autorizare PJ](https://portal.onrc.ro/ONRCPortalWeb/appmanager/myONRC/wicket?p=rc.formulareInregPJ) din meniul din stânga. (RC - Registrul Comerțului, PJ - Persoana Juridică. Nepotrivite astfel de abrevieri pe un site oficial în opinia mea.)
+Accesează [Înregistrare în RC și autorizare PJ](https://portal.onrc.ro/ONRCPortalWeb/appmanager/myONRC/wicket?p=rc.formulareInregPJ) din meniul din stânga. (RC = Registrul Comerțului, PJ = Persoana Juridică. Nepotrivite astfel de abrevieri pe un site oficial în opinia mea.)
 
 <img src="/assets/SRL/img/img2.png" alt="drawing" height="200"/>
 
@@ -54,7 +54,7 @@ Aici se prezintă 2 linkuri, unul cu formularul în sine și unul cu ghidul de c
 - Salvează pas intermediar (fă asta la fiecare pas).
 - Pasul următor.
 
-#### Notă folositoare pe întreg procesul:
+### Notă folositoare pe întreg procesul:
 
 Dacă părăsești formularul, îl poți relua așa:
 
