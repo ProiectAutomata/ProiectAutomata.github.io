@@ -222,6 +222,8 @@ Descarcă cererea generată, semneaz-o și încarc-o, ca la pașii anteriori.
 
 Apasă _"Finalizare"_. Acesta este sfârșitul procesului de trimitere a cererii. Mai rămâne doar să platești taxa de soluționare dosar, în valoare de 122 ron la timpul scrierii.
 
+Dacă ai ajuns până aici, bravo! Acum înțelegi mai bine ce înseamnă să deschizi un SRL și sper că ai mai multă încredere în abilitatea ta de a începe și gestiona o afacere. Puteai să plătești un consultant să te ajute, dar așa ai economisit cam 800 ron și ai învățat ceva. Dacă consideri că acest tutorial te-a ajutat, poți susține efortul depus de mine aici cu o donație pe [buymeacoffee.com](https://www.buymeacoffee.com/davidmanda). Va fi apreciată!
+
 # 3. După finalizarea cererii
 
 ### Ordinul de plată
