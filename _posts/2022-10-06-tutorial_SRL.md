@@ -247,4 +247,4 @@ Este foarte important să plătești ordinul de plată în ziua în care este ge
 
 Pentru a verifica stadiul dosarului tău, trebuie să accesezi [Stadiu dosar](https://portal.onrc.ro/ONRCPortalWeb/appmanager/myONRC/wicket?p=rc.stadiuDosar) din meniul din partea stângă. Chiar dacă pagina de detalii accesată mai sus are o secțiune numiă _"Observații"_, observațiile nu apar acolo, ci aici. Cel mai ușor este să cauți firma folosing numărul de înregistrare, pe care îl găsești la secțiunea _"Detalii"_ a cererii (vezi mai sus cum să accesezi). Aici verifici periodic dacă dosarul a fost soluționat și cererea a fost admisă. Dacă totul merge bine, în două sau trei zile ar trebui să fie verificată cerera și admisă. Dacă apar ceva probleme și observații, cel mai bine contactezi prin telefon sediul ONRC din județul tău și ceri clarificări. Să sperăm că nu este nevoie, dar dacă este, cumva o să o scoți la capăt sigur. Mult succes!
 
-Pentru întrebări sau sugestii mă puteți contacta la dmanda@automata.ltd
+Pentru întrebări sau feedback: dmanda@automata.ltd
