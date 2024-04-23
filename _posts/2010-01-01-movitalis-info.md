@@ -28,9 +28,11 @@ Descarcă acum și bucură-te de o structură clară pentru activitatea ta, o an
 
 MULT MAI MULT DECÂT UN TRACKER AL ACTIVITĂȚII & UN PROGRAM DE ANTRENAMENT
 
-<figure>
-  <img src="/assets/img/Cardio_1290x2796.png" alt="drawing" height=500/>
-</figure>
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
 
 Este ca și cum ai avea un antrenor fitness și o echipă de oameni de știință în buzunarul tău, gata să îți spună ce să faci și să îți explice de ce.
 
@@ -47,6 +49,8 @@ Anduranță - Învață cum să dezvolți anduranța cu antrenamente ușoare și
 Înțelege-ți parametrii - Aplicația evidențiază cele mai importante măsurători ale sănătății tale fitness și te ajută să înțelegi căt de bine funcționează corpul tău.
 
 Capătă structură - Lasă în urmă zilele în care nu știi ce să faci mai întâi și bucură-te de o structură clară a antrenamentului ce ia în calcul atât Cardio cât și Forța, Mobilitatea și Anduranța
+
+<img src="/assets/img/Cardio_RO_1290x2796.png" alt="drawing"/>
 
 ÎN DETALIU
 
