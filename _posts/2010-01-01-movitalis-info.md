@@ -12,13 +12,13 @@ Preia controlul asupra sănătății tale prin fitness și trăiește o viață 
 
 <div class="row">
   <div class="column">
-    <img src="/assets/img/Sumar_RO_1290x2796.png" alt="Forest" style="width:33.3%">
+    <img src="/assets/img/Sumar_RO_1290x2796.png" alt="Forest" style="width:30%">
   </div>
   <div class="column">
-    <img src="/assets/img/Forță_RO_1290x2796.png" alt="Mountains" style="width:33.3%">
+    <img src="/assets/img/Forță_RO_1290x2796.png" alt="Mountains" style="width:30%">
   </div>
   <div class="column">
-    <img src="/assets/img/Analiză_RO_1290x2796.png" alt="Snow" style="width:33.3%">
+    <img src="/assets/img/Analiză_RO_1290x2796.png" alt="Snow" style="width:30%">
   </div>
 </div>
 
