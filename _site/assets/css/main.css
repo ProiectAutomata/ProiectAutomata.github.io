@@ -47,6 +47,12 @@ body img {
   display: block;
   max-width: 100%; }
 
+body video {
+  align: middle;
+  margin: 5px auto auto auto;
+  display: block;
+  max-width: 100%; }
+
 p {
   display: block;
   color: #3c3838;
