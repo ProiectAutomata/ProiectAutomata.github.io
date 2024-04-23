@@ -29,8 +29,7 @@ Descarcă acum și bucură-te de o structură clară pentru activitatea ta, o an
 MULT MAI MULT DECÂT UN TRACKER AL ACTIVITĂȚII & UN PROGRAM DE ANTRENAMENT
 
 <video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
+  <source src="/assets/img/Quiz_preview.MP4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
