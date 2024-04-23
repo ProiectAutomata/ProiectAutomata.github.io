@@ -11,9 +11,9 @@ duration: 2
 Preia controlul asupra sănătății tale prin fitness și trăiește o viață mai lungă, mai plină de energie și mai activă. Folosind cele mai noi studii stiințifice această aplicație îți oferă o structură de antrenament extrem de simplă și eficientă pentru a dezvolta cele mai importante aspecte ale sănătății tale fitness - apoi te ajută să o implementezi prin monitorizare și testare automată.
 
 <div class="imageset">
-  <img src="/assets/img/Sumar_RO_1290x2796.png" alt="Forest" style="width:30%">
-  <img src="/assets/img/Forță_RO_1290x2796.png" alt="Mountains" style="width:30%">
-  <img src="/assets/img/Analiză_RO_1290x2796.png" alt="Snow" style="width:30%">
+  <img src="/assets/img/Sumar_RO_1290x2796.png" alt="Forest" style="display:inline-block;">
+  <img src="/assets/img/Forță_RO_1290x2796.png" alt="Mountains" style="display:inline-block;">
+  <img src="/assets/img/Analiză_RO_1290x2796.png" alt="Snow" style="display:inline-block;">
 </div>
 
 Movitalis nu este ca restul aplicaților care te copleșesc cu informații și necesită timp pentru a completa tot felul de teste, a loga repetări, greutăți și obiceiuri. Simplitatea stă la baza aplicației și începe să fie folositoare din prima clipă în care este descărcată. Îți analizează automat antrenamentele tale existente, le organizează și te ajută să înțelegi ar trebui să faci în continuare - fără ca tu să introduci manual vreo informație!
