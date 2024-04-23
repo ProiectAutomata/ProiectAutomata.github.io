@@ -10,13 +10,11 @@ duration: 2
 
 Preia controlul asupra sănătății tale prin fitness și trăiește o viață mai lungă, mai plină de energie și mai activă. Folosind cele mai noi studii stiințifice această aplicație îți oferă o structură de antrenament extrem de simplă și eficientă pentru a dezvolta cele mai importante aspecte ale sănătății tale fitness - apoi te ajută să o implementezi prin monitorizare și testare automată.
 
-<div class="imageset">
-  <img src="/assets/img/Sumar_RO_1290x2796.png" alt="Forest" style="display:inline-block;">
-  <img src="/assets/img/Forță_RO_1290x2796.png" alt="Mountains" style="display:inline-block;">
-  <img src="/assets/img/Analiză_RO_1290x2796.png" alt="Snow" style="display:inline-block;">
-</div>
+<img src="/assets/img/Sumar_RO_1290x2796.png" alt="Forest" style="width:30%">
 
 Movitalis nu este ca restul aplicaților care te copleșesc cu informații și necesită timp pentru a completa tot felul de teste, a loga repetări, greutăți și obiceiuri. Simplitatea stă la baza aplicației și începe să fie folositoare din prima clipă în care este descărcată. Îți analizează automat antrenamentele tale existente, le organizează și te ajută să înțelegi ar trebui să faci în continuare - fără ca tu să introduci manual vreo informație!
+
+<img src="/assets/img/Forță_RO_1290x2796.png" alt="Mountains" style="width:30%">
 
 Descarcă acum și bucură-te de o structură clară pentru activitatea ta, o analiză automată a sănătății tale fitness, teste esențiale ale forței și mobilității tale, și multe altele. Simplă în abordare și profundă în conținut, aplicația te va ajuta să decizi cum să arate următorul antrenament dintr-o privire. Iar dacă dorești să aprofundezi informațiile din spatele programului și a testelor, explicații despre cum ar trebui să arate antrenamentele și de ce, toate sunt gata pentru tine să le înțelegi.
 
@@ -44,7 +42,7 @@ Anduranță - Învață cum să dezvolți anduranța cu antrenamente ușoare și
 
 Capătă structură - Lasă în urmă zilele în care nu știi ce să faci mai întâi și bucură-te de o structură clară a antrenamentului ce ia în calcul atât Cardio cât și Forța, Mobilitatea și Anduranța
 
-<img src="/assets/img/Cardio_RO_1290x2796.png" alt="drawing"/>
+<img src="/assets/img/Analiză_RO_1290x2796.png" alt="Snow" style="width:30%">
 
 ÎN DETALIU
 
@@ -61,6 +59,8 @@ Testare funcțională - Folosește testele de forță și mobilitate pentru a id
 Opțiune de logare manuală - Dacă nu ai un dispozitiv fitness smart sau ai uitat să înregistrezi, poți loga manual antrenamente.
 
 Integrare smart watch - Folosește-ți dispozitivul la fel ca și până acum. Aplicația va citi automat antrenamentele din Apple Health. Nu necesită să înregistrezi cu aplicația, ci doar îți analizează datele deja existente.
+
+<img src="/assets/img/Cardio_RO_1290x2796.png" alt="drawing" style="width:30%"/>
 
 Deci descarcă acum Movitalis și bucură-te de structură, simplitate, energie și longevitate!
 
