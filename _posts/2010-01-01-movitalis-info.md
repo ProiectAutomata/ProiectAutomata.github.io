@@ -4,7 +4,7 @@ title: "Movitalis"
 author: "David Manda"
 categories: article
 tags: [movitalis]
-image: LogoMovitalis.png
+image: Logo_thumbnail.png
 duration: 2
 ---
 
@@ -12,7 +12,7 @@ duration: 2
 
 <img src="/assets/img/LogoMovitalis.png" alt="drawing" height="150"/>
 
-Preia controlul asupra sănătății tale prin fitness și trăiește o viață mai lungă, mai plină de energie și mai activă.
+Preia controlul asupra sănătății tale prin fitness și trăiește o viață mai lungă, mai plină de energie și mai activă!
 
 <img src="/assets/img/Preview.png" alt="drawing">
 
