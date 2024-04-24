@@ -36,6 +36,4 @@ Ești gata să începi drumul către o viață mai sănătoasă? Descarcă acum 
 
 <span style="font-size: 15px">
 Disclaimer:
-
 Nimic din aplicație nu constituie un sfat medical. Consultă-ți medicul înainte să faci orice decizii legate de sănătatea ta!
-</span>
