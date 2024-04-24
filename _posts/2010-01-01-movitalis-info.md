@@ -4,7 +4,7 @@ title: "Movitalis"
 author: "David Manda"
 categories: article
 tags: [movitalis]
-image: Movitalis.jpeg
+image: LogoMovitalis.png
 duration: 2
 ---
 
