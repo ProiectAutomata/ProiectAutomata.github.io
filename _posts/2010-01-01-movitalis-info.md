@@ -31,7 +31,7 @@ Elimină puncte slabe. Movitalis îți analizează automat antrenamentele și le
 Ești gata să începi drumul către o viață mai sănătoasă? Descarcă acum de pe App Store!
 
 <a href="https://apps.apple.com/ro/app/movitalis-fitness-tracking/id6470913447" target="_blank">
-    <img src="https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg" alt="Download on the App Store">
+    <img src="/assets/img/Download_on_the_App_Store_Badge_RO_RGB_blk_100317.svg" alt="Download on the App Store">
 </a>
 
 <span style="font-size: 15px">
