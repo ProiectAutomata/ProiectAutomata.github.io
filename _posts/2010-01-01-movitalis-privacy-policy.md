@@ -3,7 +3,7 @@ layout: post
 title: "Politica de confidențialitate"
 author: "David Manda"
 categories: article
-tags: [movitalis]
+tags: [movitalis-privacy]
 image: politica-de-confidentialitate-1.webp
 duration: 3
 ---
