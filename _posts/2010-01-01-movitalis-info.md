@@ -33,7 +33,7 @@ Your browser does not support the video tag.
 Ești gata să începi drumul către o viață mai sănătoasă? Descarcă acum de pe App Store!
 
 <a href="https://apps.apple.com/ro/app/movitalis-fitness-tracking/id6470913447" target="_blank">
-    <img src="/assets/img/Download_on_the_App_Store_Badge_RO_RGB_blk_100317.svg" height="100" alt="Download on the App Store">
+    <img src="/assets/img/Download_on_the_App_Store_Badge_RO_RGB_blk_100317.svg" height="50" alt="Download on the App Store">
 </a>
 
 <span style="font-size: 15px">
