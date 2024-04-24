@@ -8,7 +8,7 @@ image: Movitalis.jpeg
 duration: 2
 ---
 
-# Longevitate prin mișcare
+## Longevitate prin mișcare
 
 <img src="/assets/img/LogoMovitalis.png" alt="drawing" height="200"/>
 
@@ -28,7 +28,7 @@ Elimină puncte slabe. Movitalis îți analizează automat antrenamentele și le
 
 <img src="/assets/img/Forță_RO_1290x2796.png"  alt="drawing" height="500">
 
-# În detaliu
+## În detaliu
 
 **Cardio** - Înțelege cum să dezvolți cel mai important predictor al longevității și bucură-te de monitorizare automată.
 
