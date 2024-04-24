@@ -10,7 +10,7 @@ duration: 2
 
 ## Longevitate prin mișcare
 
-<img src="/assets/img/LogoMovitalis.png" alt="drawing" height="200"/>
+<img src="/assets/img/LogoMovitalis.png" alt="drawing" height="100"/>
 
 Preia controlul asupra sănătății tale prin fitness și trăiește o viață mai lungă, mai plină de energie și mai activă.
 
