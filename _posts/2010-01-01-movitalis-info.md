@@ -10,19 +10,15 @@ duration: 2
 
 # Longevitate prin mișcare
 
-<img src="/assets/img/LogoMovitalis.png" alt="drawing" height="250"/>
+<img src="/assets/img/LogoMovitalis.png" alt="drawing" height="200"/>
 
-Preia controlul asupra sănătății tale prin fitness și trăiește o viață mai lungă, mai plină de energie și mai activă. Folosind cele mai noi studii stiințifice această aplicație îți oferă o structură de antrenament extrem de simplă și eficientă pentru a dezvolta cele mai importante aspecte ale sănătății tale fitness - apoi te ajută să o implementezi prin monitorizare și testare automată.
+Preia controlul asupra sănătății tale prin fitness și trăiește o viață mai lungă, mai plină de energie și mai activă.
 
 <img src="/assets/img/Preview.png" alt="drawing">
 
-Movitalis nu este ca restul aplicaților care te copleșesc cu informații și necesită timp pentru a completa tot felul de teste, a loga repetări, greutăți și obiceiuri. Simplitatea stă la baza aplicației și începe să fie folositoare din prima clipă în care este descărcată. Îți analizează automat antrenamentele tale existente, le organizează și te ajută să înțelegi ar trebui să faci în continuare - fără ca tu să introduci manual vreo informație!
+Atinge-ți obiectivele fitness cu un target de performanță personalizat. Customizează timpul alocat pentru a putea integra sportul în programul tău.
 
-Descarcă acum și bucură-te de o structură clară pentru activitatea ta, o analiză automată a sănătății tale fitness, teste esențiale ale forței și mobilității tale, și multe altele. Simplă în abordare și profundă în conținut, aplicația te va ajuta să decizi cum să arate următorul antrenament dintr-o privire. Iar dacă dorești să aprofundezi informațiile din spatele programului și a testelor, explicații despre cum ar trebui să arate antrenamentele și de ce, toate sunt gata pentru tine să le înțelegi.
-
-MULT MAI MULT DECÂT UN TRACKER AL ACTIVITĂȚII & UN PROGRAM DE ANTRENAMENT
-
-<video width="1290" height="2796" controls>
+<video height="500" controls>
   <source src="/assets/img/Quiz_preview.MP4" type="video/mp4">
   <source src="/assets/img/Quiz_preview.ogg" type="video/ogg">
 Your browser does not support the video tag.
