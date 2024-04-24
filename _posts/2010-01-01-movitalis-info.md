@@ -8,9 +8,11 @@ image: Movitalis.jpeg
 duration: 2
 ---
 
+<img src="/assets/img/LogoMovitalis.png" alt="drawing" height="250"/>
+
 Preia controlul asupra sănătății tale prin fitness și trăiește o viață mai lungă, mai plină de energie și mai activă. Folosind cele mai noi studii stiințifice această aplicație îți oferă o structură de antrenament extrem de simplă și eficientă pentru a dezvolta cele mai importante aspecte ale sănătății tale fitness - apoi te ajută să o implementezi prin monitorizare și testare automată.
 
-<img src="/assets/img/Preview.png" alt="sketch">
+<img src="/assets/img/Preview.png" alt="drawing">
 
 Movitalis nu este ca restul aplicaților care te copleșesc cu informații și necesită timp pentru a completa tot felul de teste, a loga repetări, greutăți și obiceiuri. Simplitatea stă la baza aplicației și începe să fie folositoare din prima clipă în care este descărcată. Îți analizează automat antrenamentele tale existente, le organizează și te ajută să înțelegi ar trebui să faci în continuare - fără ca tu să introduci manual vreo informație!
 
@@ -18,8 +20,9 @@ Descarcă acum și bucură-te de o structură clară pentru activitatea ta, o an
 
 MULT MAI MULT DECÂT UN TRACKER AL ACTIVITĂȚII & UN PROGRAM DE ANTRENAMENT
 
-<video width="320" height="240" controls>
+<video width="1290" height="2796" controls>
   <source src="/assets/img/Quiz_preview.MP4" type="video/mp4">
+  <source src="/assets/img/Quiz_preview.ogg" type="video/ogg">
 Your browser does not support the video tag.
 </video>
 
@@ -31,7 +34,7 @@ Elimină puncte slabe - Vezi cât timp petreci antrenând Forță și Mobilitate
 
 Cardio - Înțelege cum să dezvolți cel mai important predictor al longevității și bucură-te de monitorizare automată.
 
-<img src="/assets/img/Forță_RO_1290x2796.png" alt="sketch">
+<img src="/assets/img/Forță_RO_1290x2796.png"  alt="drawing" height="250">
 
 Forță și Mobilitate - Vezi cât timp petreci antrenând mușchii și articulațiile tale și pune-le la probă cu teste funcționale.
 
