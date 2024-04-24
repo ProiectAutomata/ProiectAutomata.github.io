@@ -18,7 +18,7 @@ Preia controlul asupra sănătății tale prin fitness și trăiește o viață 
 
 Atinge-ți obiectivele fitness cu un target de performanță personalizat. Customizează timpul alocat pentru a putea integra sportul în programul tău.
 
-<video height="500" controls>
+<video height="500" autoplay muted>
   <source src="/assets/img/Quiz_preview.MP4" type="video/mp4">
   <source src="/assets/img/Quiz_preview.ogg" type="video/ogg">
 Your browser does not support the video tag.
