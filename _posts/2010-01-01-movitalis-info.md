@@ -8,6 +8,8 @@ image: Movitalis.jpeg
 duration: 2
 ---
 
+# Longevitate prin mișcare
+
 <img src="/assets/img/LogoMovitalis.png" alt="drawing" height="250"/>
 
 Preia controlul asupra sănătății tale prin fitness și trăiește o viață mai lungă, mai plină de energie și mai activă. Folosind cele mai noi studii stiințifice această aplicație îți oferă o structură de antrenament extrem de simplă și eficientă pentru a dezvolta cele mai importante aspecte ale sănătății tale fitness - apoi te ajută să o implementezi prin monitorizare și testare automată.
@@ -34,7 +36,7 @@ Elimină puncte slabe - Vezi cât timp petreci antrenând Forță și Mobilitate
 
 Cardio - Înțelege cum să dezvolți cel mai important predictor al longevității și bucură-te de monitorizare automată.
 
-<img src="/assets/img/Forță_RO_1290x2796.png"  alt="drawing" height="250">
+<img src="/assets/img/Forță_RO_1290x2796.png"  alt="drawing" height="500">
 
 Forță și Mobilitate - Vezi cât timp petreci antrenând mușchii și articulațiile tale și pune-le la probă cu teste funcționale.
 
