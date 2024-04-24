@@ -24,25 +24,21 @@ Atinge-ți obiectivele fitness cu un target de performanță personalizat. Custo
 Your browser does not support the video tag.
 </video>
 
-Este ca și cum ai avea un antrenor fitness și o echipă de oameni de știință în buzunarul tău, gata să îți spună ce să faci și să îți explice de ce.
-
-Urmărește-ți activitatea - Aruncă o privire și vezi cum ți-ai petrecut timpul săptămâna aceasta, și ce îți rămâne de făcut.
-
-Elimină puncte slabe - Vezi cât timp petreci antrenând Forță și Mobilitate, Cardio și Anduranță. Identifică arii neglijate și adresează-le.
-
-Cardio - Înțelege cum să dezvolți cel mai important predictor al longevității și bucură-te de monitorizare automată.
+Elimină puncte slabe. Movitalis îți analizează automat antrenamentele și le asociază o categorie de efort: Cardio, Anduranță sau Forță și Mobilitate. Devine ușor să identifici arii neglijate sau care îți ocupă potențial prea mult timp.
 
 <img src="/assets/img/Forță_RO_1290x2796.png"  alt="drawing" height="500">
 
-Forță și Mobilitate - Vezi cât timp petreci antrenând mușchii și articulațiile tale și pune-le la probă cu teste funcționale.
+# În detaliu
+
+_Cardio_ - Înțelege cum să dezvolți cel mai important predictor al longevității și bucură-te de monitorizare automată.
+
+_Forță și Mobilitate_ - Vezi cât timp petreci antrenând mușchii și articulațiile tale și pune-le la probă cu teste funcționale.
 
 Anduranță - Învață cum să dezvolți anduranța cu antrenamente ușoare și descoperă legătura cu sănătatea metabolică. Bucură-te de monitorizare automată a antrenamentelor și a performanței.
 
 Înțelege-ți parametrii - Aplicația evidențiază cele mai importante măsurători ale sănătății tale fitness și te ajută să înțelegi căt de bine funcționează corpul tău.
 
 Capătă structură - Lasă în urmă zilele în care nu știi ce să faci mai întâi și bucură-te de o structură clară a antrenamentului ce ia în calcul atât Cardio cât și Forța, Mobilitatea și Anduranța
-
-ÎN DETALIU
 
 Categorizare automată - aplicația îți identifică automat antrenamentele de Cardio, Anduranță și Forță/Mobilitate. Poți viziona toate antrenamentele din fiecare categorie.
 
