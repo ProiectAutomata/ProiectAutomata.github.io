@@ -24,7 +24,7 @@ Atinge-ți obiectivele fitness cu un target de performanță personalizat. Custo
 Your browser does not support the video tag.
 </video>
 
-Elimină puncte slabe. Movitalis îți analizează automat antrenamentele și le asociază o categorie de efort: Cardio, Anduranță sau Forță și Mobilitate. Devine ușor să identifici arii neglijate sau care îți ocupă potențial prea mult timp.
+Elimină puncte slabe. Movitalis îți analizează automat antrenamentele și le asociază o categorie de efort: Cardio, Anduranță sau Forță și Mobilitate. Devine ușor să identifici arii neglijate sau care îți ocupă prea mult timp.
 
 <img src="/assets/img/Forță_RO_1290x2796.png"  alt="drawing" height="500">
 

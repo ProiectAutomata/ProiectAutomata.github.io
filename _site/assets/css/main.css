@@ -533,6 +533,16 @@ pre code {
   .fa-instagram:hover {
     color: #375989; }
 
+.fa-app-store {
+  padding: 5px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s; }
+  .fa-app-store:hover {
+    color: #375989; }
+
 .fa-github {
   padding: 5px;
   -webkit-transition: 1s;

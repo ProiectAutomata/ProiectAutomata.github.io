@@ -10,6 +10,7 @@ $pinterest-color: #bd081c;
 $medium-color: #00AB6C;
 $codepen-color: black;
 $rss-color: #ff6600;
+$app-store-color:#0073a4;
 
 @mixin social-media-icon($color, $transition){
   -webkit-transition: $transition;
@@ -35,6 +36,11 @@ $rss-color: #ff6600;
 .fa-instagram {
   padding: 5px;
   @include social-media-icon($instagram-color, $icon-transition-time);
+}
+
+.fa-app-store {
+  padding: 5px;
+  @include social-media-icon($app-store-color, $icon-transition-time);
 }
 
 .fa-github {
