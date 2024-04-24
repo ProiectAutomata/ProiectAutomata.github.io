@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Movitalis"
+title: "Aplicația"
 author: "David Manda"
 categories: article
 tags: [movitalis]
