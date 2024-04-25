@@ -26,7 +26,7 @@ Completează quizul și obține un target fitness personalizat. Customizează vo
 Your browser does not support the video tag.
 </video>
 
-În plus, vei beneficia de multe alte informații interesante, precum teste de forță și mobilitate, analiză a celor mai importanți parametri fitness și predicții ale performanței tale.
+În plus, vei beneficia de multe alte informații interesante, precum analiză a celor mai importanți parametri fitness și predicții ale performanței tale.
 
 <img src="/assets/img/Antrenamente_vo2max.png" alt="drawing">
 
