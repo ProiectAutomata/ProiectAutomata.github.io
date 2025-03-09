@@ -35,9 +35,13 @@ Your browser does not support the video tag.
 Track your progress – See how you’ve spent your time weekly, monthly, or over six months.
 
 Fix weaknesses – Identify imbalances in cardio, strength, and mobility.
+
 Train smarter – Use Apple Watch integration to track your effort in real-time.
+
 Understand your body – Get insights into key fitness parameters and how they evolve.
+
 Functional testing – Assess your strength and mobility with guided tests.
+
 Get structure & clarity
 
 Gone are the days of not knowing what to train next. Movitalis creates a structured plan that balances cardio, strength, mobility, and endurance—helping you build a healthier body for the long run.
