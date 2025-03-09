@@ -28,7 +28,7 @@ More than just an activity tracker
 Movitalis is like having a fitness coach and a team of scientists in your pocket, ready to guide you with both structured training and scientific insights.
 
 <video height="500" autoplay muted loop>
-  <source src="/assets/img/Quiz_preview.mov" type="video/mov">
+  <source src="/assets/img/Quiz_preview.mov" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
