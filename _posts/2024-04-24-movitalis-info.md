@@ -21,8 +21,7 @@ Elimină punctele slabe. Movitalis îți analizează automat antrenamentele și 
 Completează quizul și obține un target fitness personalizat. Customizează volumul săptămânal pentru a putea integra sportul în programul tău.
 
 <video height="500" autoplay muted loop>
-  <source src="/assets/img/Quiz_preview.MP4" type="video/mp4">
-  <source src="/assets/img/Quiz_preview.ogg" type="video/ogg">
+  <source src="/assets/img/Quiz_preview.mov" type="video/mov">
 Your browser does not support the video tag.
 </video>
 
