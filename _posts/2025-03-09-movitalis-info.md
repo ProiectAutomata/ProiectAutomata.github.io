@@ -12,7 +12,7 @@ duration: 2
 
 <img src="/assets/img/LogoMovitalis.png" alt="drawing" height="150"/>
 
-Movitalis helps you train effectively for longevity—not just performance. It transforms data from your smartwatch into actionable insights to improve key fitness parameters, guiding you toward smarter workouts based on the latest longevity research.
+Movitalis is the first activity tracker that focuses on longevity - not performance. With Movitalis you can improve your health and fitness by training at the intensity that is right for you. Simple, effective and backed by science.
 
 <img src="/assets/img/Preview.png" alt="drawing">
 
@@ -20,10 +20,11 @@ Unlike other apps that overwhelm you with data and require tedious manual tracki
 
 ## Why Movitalis?
 
-• Customizable weekly workout plan – Get structured training based on your fitness data and goals.  
-• Apple Watch workout tracker – Train seamlessly with real-time tracking and automatic sync.  
-• Clarity & simplicity – See exactly what to do next without unnecessary complexity.  
-• Longevity-focused fitness – Improve VO₂ max, strength, and mobility for long-term health.
+• **Longevity-focused fitness:** Improve VO₂ max, strength, and mobility for long-term health.
+• **Improved workout structure:** Get effective training based on your fitness data and goals.  
+• **Apple Watch workout tracker:** Train seamlessly with real-time tracking and automatic sync.  
+• **Consistency over perfection:** Movitalis meets you where you are and helps you make good use of your time.
+• **Clarity & simplicity:** See exactly what to do next without unnecessary complexity.
 
 <video height="500" autoplay muted loop>
   <source src="/assets/img/Quiz_preview.mov" type="video/mp4">
@@ -33,16 +34,16 @@ Your browser does not support the video tag.
 ## More than just an activity tracker.
 
 Movitalis is like having a fitness coach and a team of scientists in your pocket, ready to guide you with both structured training and scientific insights.
-Gone are the days of not knowing what to train next. Movitalis creates a structured plan that balances cardio, strength, mobility, and endurance—helping you build a healthier body for the long run.
+With all your workouts organised in one place, Movitalis creates a structured plan that balances cardio, strength, mobility, and endurance. It's complete but not complicated and will help you build a healthier body for the long run.
 
-## Key features
+## Key benefits
 
-Track your progress – See how you’ve spent your time weekly, monthly, or over six months.  
-Fix weaknesses – Identify imbalances in cardio, strength, and mobility.  
-Train smarter – Use Apple Watch integration to track your effort in real-time.  
-Understand your body – Get insights into key fitness parameters and how they evolve.  
-Functional testing – Assess your strength and mobility with guided tests.  
-Get structure & clarity
+• **Track your progress:** See how you’ve spent your time weekly, monthly, or over six months.  
+• **Get structure & clarity:** With a customisable weekly workout plan.  
+• **Fix weaknesses:** Identify imbalances in cardio, strength, and mobility.  
+• **Train smarter:** Use Apple Watch integration to track your effort in real-time.  
+• **Understand your body:** Get insights into key fitness parameters and how they evolve.  
+• **Functional testing:** Assess your strength and mobility with practical tests.
 
 Download now and start training for a longer, healthier life!
 
