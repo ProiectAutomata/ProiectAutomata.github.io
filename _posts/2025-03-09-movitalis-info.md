@@ -12,7 +12,7 @@ duration: 2
 
 <img src="/assets/img/LogoMovitalis.png" alt="drawing" height="150"/>
 
-Movitalis is the first activity tracker that focuses on longevity - not performance. With Movitalis you can improve your health and fitness by training at the intensity that is right for you. Simple, effective and backed by science.
+Movitalis is the first activity tracker that focuses on **longevity** - not performance. With Movitalis you can improve your health and fitness by training at the intensity that is right for you. Simple, effective and backed by science.
 
 <img src="/assets/img/Preview.png" alt="drawing">
 
