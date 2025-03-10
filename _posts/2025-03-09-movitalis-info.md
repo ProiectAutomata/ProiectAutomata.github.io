@@ -20,10 +20,10 @@ Unlike other apps that overwhelm you with data and require tedious manual tracki
 
 ## Why Movitalis?
 
-• **Longevity-focused fitness:** Improve VO₂ max, strength, and mobility for long-term health.
+• **Longevity-focused fitness:** Improve VO₂ max, strength, and mobility for long-term health.  
 • **Improved workout structure:** Get effective training based on your fitness data and goals.  
 • **Apple Watch workout tracker:** Train seamlessly with real-time tracking and automatic sync.  
-• **Consistency over perfection:** Movitalis meets you where you are and helps you make good use of your time.
+• **Consistency over perfection:** Movitalis meets you where you are and helps you make good use of your time.  
 • **Clarity & simplicity:** See exactly what to do next without unnecessary complexity.
 
 <video height="500" autoplay muted loop>
