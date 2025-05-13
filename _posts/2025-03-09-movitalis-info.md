@@ -36,8 +36,9 @@ Your browser does not support the video tag.
 Movitalis made headlines when it launched on Product Hunt, becoming #1 Health & Fitness product of the week. You can check out the launch here:
 
 <a href="https://www.producthunt.com/posts/movitalis?embed=true&utm_source=badge-top-post-topic-badge&utm_medium=badge&utm_souce=badge-movitalis" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-topic-badge.svg?post_id=940015&theme=light&period=weekly&topic_id=43&t=1747130326831" alt="Movitalis - A&#0032;longevity&#0045;focused&#0032;activity&#0032;tracker&#0044;&#0032;planner&#0032;&#0038;&#0032;coach | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-
-<iframe style="border: none;" src="https://cards.producthunt.com/cards/posts/940015?v=1" width="500" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<div style="text-align: center;">
+   <iframe style="border: none;" src="https://cards.producthunt.com/cards/posts/940015?v=1" width="500" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
+</div>
 
 ## More than just an activity tracker.
 
