@@ -1,4 +1,638 @@
----
-layout: home
-title: Home
----
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automata CRM — Soft CRM Românesc pentru Firme Mici și Mijlocii | Sistem CRM On-Premise</title>
+    <meta name="description" content="Automata CRM este un sistem CRM românesc, simplu și accesibil, creat pentru IMM-uri. Plată unică, fără abonament lunar. Integrare e-Factura, Calendar Google, și rapoarte avansate. Eligibil fonduri europene PNRR.">
+    <meta name="keywords" content="CRM, soft CRM, sistem CRM, program CRM, CRM Romania, CRM romanesc, CRM pentru firme, CRM IMM, CRM on premise, CRM fara abonament, digitalizare IMM, fonduri europene CRM, PNRR digitalizare, e-Factura CRM, gestionare clienti, Automata CRM">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Automata CRM — Soft CRM Românesc | Plată Unică, Fără Abonament">
+    <meta property="og:description" content="Sistem CRM simplu și accesibil pentru firme românești. Integrare e-Factura, Calendar, Rapoarte. Eligibil fonduri europene.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ro_RO">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a5f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-hero { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #3b82f6 100%); }
+        .gradient-cta { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); }
+        .feature-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+        .feature-card { transition: all 0.2s ease; }
+        .pulse-dot { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- Top Banner — EU Grants -->
+    <div class="bg-amber-50 border-b border-amber-200 py-2 px-4 text-center text-sm">
+        <span class="text-amber-800">
+            <span class="font-semibold">Eligibil fonduri europene</span> — PNRR, Programe Regionale 2021-2027. Plată unică, ideal pentru proiecte de digitalizare.
+        </span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg gradient-cta flex items-center justify-center">
+                    <span class="text-white font-bold text-sm">A</span>
+                </div>
+                <span class="text-xl font-bold text-brand-900">Automata <span class="text-brand-600">CRM</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm text-gray-600">
+                <a href="#functionalitati" class="hover:text-brand-600 transition">Funcționalități</a>
+                <a href="#avantaje" class="hover:text-brand-600 transition">Avantaje</a>
+                <a href="#preturi" class="hover:text-brand-600 transition">Prețuri</a>
+                <a href="#faq" class="hover:text-brand-600 transition">Întrebări frecvente</a>
+            </div>
+            <a href="#contact" class="bg-brand-600 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-brand-700 transition">
+                Solicită Demo
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-hero text-white">
+        <div class="max-w-6xl mx-auto px-4 py-20 md:py-28">
+            <div class="max-w-3xl">
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="pulse-dot w-2 h-2 bg-green-400 rounded-full inline-block"></span>
+                    <span class="text-sm text-blue-200 font-medium">Software de business creat în România</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    Renunță la Excel.<br>
+                    <span class="text-blue-200">Organizează-ți clienții simplu.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl leading-relaxed">
+                    <strong>Automata CRM</strong> este un soft CRM românesc, creat special pentru firme mici și mijlocii.
+                    Plată unică, fără abonament lunar, cu integrare e-Factura și Calendar Google.
+                    Automatizează ce contează. Simplifică restul.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-white text-brand-700 px-8 py-4 rounded-xl text-base font-semibold hover:bg-blue-50 transition text-center">
+                        Solicită Demo Gratuit
+                    </a>
+                    <a href="#functionalitati" class="border-2 border-white/30 text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-white/10 transition text-center">
+                        Vezi funcționalitățile
+                    </a>
+                </div>
+                <div class="mt-10 flex flex-wrap gap-6 text-sm text-blue-200">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        Fără abonament lunar
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        Eligibil fonduri europene
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        Interfață în limba română
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        Suport în română
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-4">Îți recunoști firma?</h2>
+            <p class="text-gray-500 text-center mb-12 max-w-2xl mx-auto">Multe firme din România încă gestionează clienții în Excel, pe WhatsApp sau pe hârtie. Dacă te regăsești în situațiile de mai jos, Automata CRM este pentru tine.</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="text-3xl mb-3">📊</div>
+                    <h3 class="font-semibold text-lg mb-2">Datele clienților sunt în mai multe locuri</h3>
+                    <p class="text-gray-500 text-sm">Excel-uri, carnete, e-mailuri, mesaje WhatsApp. Nimeni nu știe exact ce s-a discutat cu clientul.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="text-3xl mb-3">⏰</div>
+                    <h3 class="font-semibold text-lg mb-2">Pierzi oportunități pentru că uiți</h3>
+                    <p class="text-gray-500 text-sm">Un lead care nu a fost contactat la timp, o ofertă care nu a fost trimisă. Fără sistem, se pierd bani.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="text-3xl mb-3">💰</div>
+                    <h3 class="font-semibold text-lg mb-2">Abonamentele lunare sunt prea scumpe</h3>
+                    <p class="text-gray-500 text-sm">MiniCRM, HubSpot, Salesforce — toate cer €50-150/lună/utilizator. Pe 3 ani, costul devine enorm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="functionalitati" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-4">Tot ce ai nevoie într-un singur sistem CRM</h2>
+            <p class="text-gray-500 text-center mb-14 max-w-2xl mx-auto">Automata CRM vine cu toate funcționalitățile esențiale incluse. Fără add-on-uri costisitoare, fără surprize.</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Feature cards -->
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Dashboard</h3>
+                    <p class="text-gray-500 text-sm">Vedere de ansamblu asupra activității firmei: clienți noi, taskuri, oportunități și rapoarte — totul pe un singur ecran.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Management Contacte</h3>
+                    <p class="text-gray-500 text-sm">Centralizează toți clienții, furnizorii și partenerii într-un singur loc. Caută, filtrează și grupează după orice criteriu.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Câmpuri Customizabile</h3>
+                    <p class="text-gray-500 text-sm">Adaugă câmpuri nelimitate pe fiecare contact — CUI, CNP, adresă, domeniu de activitate, sau orice altceva ai nevoie.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Management Taskuri</h3>
+                    <p class="text-gray-500 text-sm">Creează, asignează și urmărește taskuri pentru echipă. Deadline-uri, priorități și notificări automate.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Piste și Oportunități</h3>
+                    <p class="text-gray-500 text-sm">Urmărește fiecare lead de la primul contact până la vânzare. Pipeline vizual cu etape personalizabile.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Integrare Email</h3>
+                    <p class="text-gray-500 text-sm">Conectează-ți contul de email și vezi toată corespondența legată de fiecare client, direct în CRM.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Calendar & Google Sync</h3>
+                    <p class="text-gray-500 text-sm">Calendar integrat cu sincronizare bidirecțională Google Calendar. Programări, întâlniri și reminder-uri automate.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Rapoarte Avansate</h3>
+                    <p class="text-gray-500 text-sm">Rapoarte de vânzări, activitate, clienți și performanță echipă. Exportă în Excel sau PDF cu un click.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Permisiuni Avansate</h3>
+                    <p class="text-gray-500 text-sm">Controlează cine vede și modifică fiecare secțiune. Roluri de administrator, manager și utilizator.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Documente & Notițe</h3>
+                    <p class="text-gray-500 text-sm">Atașează documente la fiecare contact, crează notițe și stabilește legături între documente și clienți.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Hărți & Localizare</h3>
+                    <p class="text-gray-500 text-sm">Vizualizează clienții pe hartă. Util pentru echipe de vânzări în teren și planificarea vizitelor.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand-100 flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Import Date & Backup</h3>
+                    <p class="text-gray-500 text-sm">Importă clienții din Excel sau CSV. Backup manual din interfață cu un singur click. Datele tale, sub controlul tău.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages / Why Automata CRM -->
+    <section id="avantaje" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-4">De ce Automata CRM și nu altceva?</h2>
+            <p class="text-gray-500 text-center mb-14 max-w-2xl mx-auto">Compară-ne cu orice alt CRM de pe piață. Noi oferim ce altele nu pot.</p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl p-8 border border-gray-200">
+                    <h3 class="text-xl font-bold mb-4 text-brand-700">Calculează cât economisești</h3>
+                    <p class="text-gray-500 text-sm mb-5">Un CRM cu abonament lunar te costă mult mai mult pe termen lung:</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
+                            <div>
+                                <p class="font-medium">CRM cu abonament: ~€50/utilizator/lună</p>
+                                <p class="text-sm text-gray-500">5 utilizatori × 36 luni = <strong>€9.000</strong></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <div>
+                                <p class="font-semibold text-green-700">Automata CRM: €199/utilizator, o singură dată</p>
+                                <p class="text-sm text-gray-500">5 utilizatori = <strong>€995 total. Pentru totdeauna.</strong></p>
+                            </div>
+                        </div>
+                        <div class="mt-4 bg-green-50 rounded-lg p-4 border border-green-200">
+                            <p class="text-green-800 font-semibold text-lg">Economisești peste €8.000 în 3 ani</p>
+                            <p class="text-green-600 text-sm">Bani care rămân în firma ta, nu în contul unui vendor străin.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 border border-gray-200">
+                    <h3 class="text-xl font-bold mb-4 text-brand-700">Creat pentru România</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>Interfață complet în limba română</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>Suport tehnic în română</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>Integrare e-Factura / ANAF</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>Câmpuri CUI, CNP, J-series built-in</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>Date pe server propriu sau în cloud românesc</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>Eligibil fonduri europene (PNRR, POR, PoCIDIF)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EU Grants Banner -->
+    <section class="py-16 gradient-hero text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Ai fonduri europene pentru digitalizare?</h2>
+            <p class="text-blue-100 text-lg mb-6 max-w-2xl mx-auto">
+                Automata CRM este eligibil pentru toate programele de digitalizare: PNRR, Programe Regionale 2021-2027, și PoCIDIF.
+                Plata unică se încadrează perfect în bugetul proiectului — fără costuri recurente care depășesc perioada de finanțare.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-blue-200 mb-8">
+                <span class="bg-white/10 px-4 py-2 rounded-full">PNRR Digitalizare IMM</span>
+                <span class="bg-white/10 px-4 py-2 rounded-full">PR Nord-Est</span>
+                <span class="bg-white/10 px-4 py-2 rounded-full">PR București-Ilfov</span>
+                <span class="bg-white/10 px-4 py-2 rounded-full">PR Vest</span>
+                <span class="bg-white/10 px-4 py-2 rounded-full">PoCIDIF</span>
+            </div>
+            <a href="#contact" class="inline-block bg-white text-brand-700 px-8 py-4 rounded-xl text-base font-semibold hover:bg-blue-50 transition">
+                Solicită ofertă pentru proiect de digitalizare
+            </a>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="preturi" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-4">Prețuri transparente, fără surprize</h2>
+            <p class="text-gray-500 text-center mb-14 max-w-2xl mx-auto">Alege varianta care ți se potrivește. Ambele includ toate funcționalitățile.</p>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- On-premise -->
+                <div class="bg-white rounded-2xl p-8 border-2 border-brand-600 relative">
+                    <div class="absolute -top-3 left-6 bg-brand-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Recomandat pentru fonduri europene</div>
+                    <h3 class="text-xl font-bold mb-2 mt-2">On-Premise</h3>
+                    <p class="text-gray-500 text-sm mb-6">Instalat pe serverul tău. Datele rămân la tine.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-brand-700">€199</span>
+                        <span class="text-gray-500">/utilizator, o singură dată</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Toate funcționalitățile incluse
+                        </li>
+                        <li class="flex items-center gap-2 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Fără abonament lunar
+                        </li>
+                        <li class="flex items-center gap-2 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Actualizări gratuite 1 an
+                        </li>
+                        <li class="flex items-center gap-2 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Datele pe serverul tău
+                        </li>
+                        <li class="flex items-center gap-2 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Instalare cu Docker (1 click)
+                        </li>
+                        <li class="flex items-center gap-2 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Ideal pentru proiecte cu fonduri europene
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center bg-brand-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-700 transition">
+                        Solicită ofertă
+                    </a>
+                </div>
+
+                <!-- Cloud -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-200">
+                    <h3 class="text-xl font-bold mb-2 mt-2">Cloud</h3>
+                    <p class="text-gray-500 text-sm mb-6">Noi ne ocupăm de server, backup și actualizări.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-gray-800">€19</span>
+                        <span class="text-gray-500">/utilizator/lună</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Toate funcționalitățile incluse
+                        </li>
+                        <li class="flex items-center gap-2 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Backup automat zilnic
+                        </li>
+                        <li class="flex items-center gap-2 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Actualizări automate
+                        </li>
+                        <li class="flex items-center gap-2 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            SSL, securitate și monitorizare incluse
+                        </li>
+                        <li class="flex items-center gap-2 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Fără server de administrat
+                        </li>
+                        <li class="flex items-center gap-2 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            Anulezi oricând, fără penalizări
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center bg-gray-800 text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-900 transition">
+                        Începe gratuit 14 zile
+                    </a>
+                </div>
+            </div>
+
+            <!-- Extra services -->
+            <div class="mt-8 text-center text-sm text-gray-500">
+                <p>Servicii opționale: <strong>Instalare și configurare</strong> de la €500 | <strong>Import date din Excel/alt CRM</strong> de la €200 | <strong>Training echipă</strong> de la €300</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">Întrebări frecvente</h2>
+
+            <div class="space-y-4">
+                <details class="bg-white rounded-xl border border-gray-200 p-6 group" open>
+                    <summary class="font-semibold cursor-pointer list-none flex items-center justify-between">
+                        Ce înseamnă „on-premise"?
+                        <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <p class="text-gray-500 text-sm mt-3">Aplicația se instalează pe un server pe care îl controlezi tu — fie în biroul tău, fie pe un server dedicat închiriat (ex: Hetzner, DigitalOcean, sau un provider românesc). Datele clienților rămân 100% la tine. Nimeni altcineva nu are acces.</p>
+                </details>
+
+                <details class="bg-white rounded-xl border border-gray-200 p-6 group">
+                    <summary class="font-semibold cursor-pointer list-none flex items-center justify-between">
+                        Pot folosi Automata CRM pentru un proiect cu fonduri europene?
+                        <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <p class="text-gray-500 text-sm mt-3">Da. Automata CRM este eligibil pentru PNRR Digitalizare IMM, Programe Regionale (Nord-Est, Vest, București-Ilfov etc.), și PoCIDIF. Emitem factură fiscală, contract de licențiere, și documentația necesară pentru justificarea cheltuielii. Plata unică se încadrează perfect în bugetele proiectelor de digitalizare.</p>
+                </details>
+
+                <details class="bg-white rounded-xl border border-gray-200 p-6 group">
+                    <summary class="font-semibold cursor-pointer list-none flex items-center justify-between">
+                        Am nevoie de un specialist IT pentru instalare?
+                        <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <p class="text-gray-500 text-sm mt-3">Pentru varianta Cloud — nu. Te înregistrezi și folosești imediat. Pentru varianta On-Premise, oferim serviciul de instalare și configurare (de la €500) sau documentație pas cu pas pentru instalare cu Docker. Dacă ai un server, durează sub 30 de minute.</p>
+                </details>
+
+                <details class="bg-white rounded-xl border border-gray-200 p-6 group">
+                    <summary class="font-semibold cursor-pointer list-none flex items-center justify-between">
+                        Ce se întâmplă dacă vreau mai mulți utilizatori?
+                        <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <p class="text-gray-500 text-sm mt-3">Adaugi licențe noi la același preț per utilizator. Nu e nevoie să cumperi un pachet nou. Pentru varianta Cloud, adaugi pur și simplu utilizatori din interfață.</p>
+                </details>
+
+                <details class="bg-white rounded-xl border border-gray-200 p-6 group">
+                    <summary class="font-semibold cursor-pointer list-none flex items-center justify-between">
+                        Pot migra de la alt CRM?
+                        <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <p class="text-gray-500 text-sm mt-3">Da. Importul din Excel și CSV este inclus. Pentru migrare de la alt CRM (MiniCRM, HubSpot, Salesforce etc.), oferim serviciul de import date — ne ocupăm noi de maparea și transferul datelor.</p>
+                </details>
+
+                <details class="bg-white rounded-xl border border-gray-200 p-6 group">
+                    <summary class="font-semibold cursor-pointer list-none flex items-center justify-between">
+                        Ce integrări sunt disponibile?
+                        <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <p class="text-gray-500 text-sm mt-3">Google Calendar (sincronizare bidirecțională), Gmail și conturi IMAP/SMTP, e-Factura / ANAF, import/export Excel și CSV. Integrări suplimentare (Oblio, Saga, SmartBill) sunt în dezvoltare.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Lead Capture Form -->
+    <section id="contact" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-4">Solicită o demonstrație gratuită</h2>
+                <p class="text-gray-500 text-center mb-10">Completează formularul și te contactăm în 24 de ore cu o demonstrație personalizată.</p>
+
+                <!-- To activate: go to formspree.io, create free account, add form, replace YOUR_FORM_ID below -->
+                <form id="leadForm" class="space-y-5" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nume complet *</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition text-sm"
+                                placeholder="Ion Popescu">
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Numele firmei *</label>
+                            <input type="text" id="company" name="company" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition text-sm"
+                                placeholder="S.C. Exemplu S.R.L.">
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition text-sm"
+                                placeholder="ion@firma.ro">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefon</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition text-sm"
+                                placeholder="0721 234 567">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="employees" class="block text-sm font-medium text-gray-700 mb-1">Câți angajați vor folosi CRM-ul?</label>
+                        <select id="employees" name="employees"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition text-sm bg-white">
+                            <option value="">Selectează</option>
+                            <option value="1-5">1-5 utilizatori</option>
+                            <option value="6-15">6-15 utilizatori</option>
+                            <option value="16-50">16-50 utilizatori</option>
+                            <option value="50+">Peste 50</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="funding" class="block text-sm font-medium text-gray-700 mb-1">Aveți fonduri europene pentru acest proiect?</label>
+                        <select id="funding" name="funding"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition text-sm bg-white">
+                            <option value="">Selectează</option>
+                            <option value="da-pnrr">Da — PNRR</option>
+                            <option value="da-regional">Da — Program Regional</option>
+                            <option value="da-alt">Da — Alt program</option>
+                            <option value="nu">Nu</option>
+                            <option value="in-curs">În curs de aplicare</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mesaj (opțional)</label>
+                        <textarea id="message" name="message" rows="3"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition text-sm resize-none"
+                            placeholder="Spune-ne mai multe despre nevoile firmei tale..."></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full gradient-cta text-white py-4 rounded-xl font-semibold text-base hover:opacity-90 transition">
+                        Trimite cererea de demo
+                    </button>
+                    <p class="text-xs text-gray-400 text-center">Nu trimitem spam. Datele tale sunt în siguranță conform GDPR.</p>
+                </form>
+
+                <!-- Success message (hidden by default) -->
+                <div id="successMessage" class="hidden text-center py-12">
+                    <div class="text-5xl mb-4">&#10003;</div>
+                    <h3 class="text-xl font-bold mb-2 text-green-700">Mulțumim!</h3>
+                    <p class="text-gray-500">Am primit cererea ta. Te contactăm în maxim 24 de ore.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-lg gradient-cta flex items-center justify-center">
+                        <span class="text-white font-bold text-xs">A</span>
+                    </div>
+                    <span class="text-lg font-bold text-white">Automata <span class="text-brand-400">CRM</span></span>
+                </div>
+                <div class="flex gap-6 text-sm">
+                    <a href="#functionalitati" class="hover:text-white transition">Funcționalități</a>
+                    <a href="#preturi" class="hover:text-white transition">Prețuri</a>
+                    <a href="#faq" class="hover:text-white transition">FAQ</a>
+                    <a href="#contact" class="hover:text-white transition">Contact</a>
+                </div>
+                <p class="text-sm">&copy; 2026 Automata CRM. Toate drepturile rezervate.</p>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+                <p>Automata CRM — Soft CRM românesc pentru firme mici și mijlocii. Sistem CRM on-premise și cloud cu integrare e-Factura, Calendar Google, și rapoarte avansate.</p>
+                <p class="mt-2">Program CRM eligibil fonduri europene PNRR, Programe Regionale 2021-2027, PoCIDIF. Management contacte, taskuri, piste și oportunități. CRM pentru IMM România.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form submission via Formspree -->
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const data = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    form.classList.add('hidden');
+                    document.getElementById('successMessage').classList.remove('hidden');
+                } else {
+                    alert('A apărut o eroare. Te rugăm să încerci din nou.');
+                }
+            }).catch(() => {
+                alert('A apărut o eroare de rețea. Te rugăm să încerci din nou.');
+            });
+        });
+    </script>
+</body>
+</html>
