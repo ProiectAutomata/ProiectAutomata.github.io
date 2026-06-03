@@ -161,6 +161,20 @@
         gtag('js', new Date());
         gtag('config', 'AW-18206206695');
     </script>
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18206206695/BeVuCKHokrgcEOfVsulD',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
 
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -792,7 +806,7 @@
                 headers: { 'Accept': 'application/json' }
             }).then(response => {
                 if (response.ok) {
-                    window.location.href = '/multumim';
+                    gtag_report_conversion('/multumim');
                 } else {
                     alert('A apărut o eroare. Te rugăm să încerci din nou.');
                 }
