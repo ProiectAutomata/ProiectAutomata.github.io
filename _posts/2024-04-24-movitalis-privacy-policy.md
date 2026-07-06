@@ -5,10 +5,10 @@ author: "David Manda"
 categories: article
 tags: [movitalis-privacy]
 image: politica-de-confidentialitate-1.webp
-duration: 3
+duration: 4
 ---
 
-Ultima modificare: 28 Noiembrie, 2025
+Ultima modificare: 6 Iulie, 2026
 
 David Manda este operatorul aplicației iOS Movitalis ("aplicația").
 
@@ -29,17 +29,34 @@ Aplicația folosește API-urile Apple pentru a citi sau a scrie anumite date din
 
 Vom folosi aceste date Apple Health pentru a-ți arăta statistici legate de antrenamentele tale și pentru a-ți da indicații despre cum să te antrenezi.
 
-Nu vom folosi datele tale Apple Health în scopuri de marketing. Datele tale vor fi accesate doar local de pe dispozitivul tău prin aplicația Apple Health și nu vor fi stocate de aplicație. Datele tale nu vor fi transmise către serverele noastre. Aplicația nu poate citi date din Apple Health fără acordul tău.
+Nu vom folosi datele tale Apple Health în scopuri de marketing. Datele brute Apple Health (antrenamente individuale, mostre de puls, pași, distanță, data nașterii, sexul biologic) sunt accesate doar local pe dispozitivul tău și nu sunt transmise către serverele noastre. Aplicația nu poate citi date din Apple Health fără acordul tău.
 
-## 1-2. Date Forță și Mobilitate
+Singura excepție o reprezintă sincronizarea opțională a datelor agregate, descrisă în secțiunea 1-2, care are loc doar cu consimțământul tău explicit.
+
+## 1-2. Sincronizarea opțională a datelor agregate de sănătate
+
+Dacă activezi sincronizarea progresului (dezactivată implicit, disponibilă în Profil → Detalii cont), aplicația va sincroniza în contul tău următoarele date **agregate**, derivate din datele Apple Health:
+
+- Valorile VO₂ max și data măsurătorii
+- Minutele săptămânale de antrenament pe categorii (Zona 2, VO₂ max, forță și mobilitate)
+- Seriile de antrenament (streaks) și realizările deblocate
+
+Aceste date sunt stocate în Firebase Firestore (Google) și sunt asociate contului tău. Scopul sincronizării este păstrarea progresului tău în siguranță și accesul la el de pe mai multe dispozitive.
+
+**Important:**
+- Datele brute (mostre de puls, antrenamente individuale) NU sunt sincronizate niciodată.
+- Sincronizarea are loc doar după consimțământul tău explicit, exprimat în aplicație (baza legală: art. 9 alin. (2) lit. (a) GDPR — consimțământ explicit pentru date privind sănătatea).
+- Poți retrage consimțământul oricând din aceeași secțiune a aplicației; la retragere, datele sincronizate sunt șterse de pe servere.
+
+## 1-3. Date Forță și Mobilitate
 
 Aplicația oferă o serie de teste de forță și mobilitate. Aceste date sunt introduse manual de către tine.
 
-Vom folosi aceste date Apple Health pentru a-ți arăta statistici legate de antrenamentele tale și pentru a-ți da indicații despre cum să te antrenezi.
+Vom folosi aceste date pentru a-ți arăta statistici legate de antrenamentele tale și pentru a-ți da indicații despre cum să te antrenezi.
 
 Nu vom folosi datele tale de Forță și Mobilitate în scopuri de marketing. Datele tale vor fi accesate doar local de pe dispozitivul tău și vor fi stocate de aplicație. Datele tale nu vor fi transmise către serverele noastre. Datele vor fi șterse la dezinstalarea aplicației.
 
-## 1-3. Colectarea de Date de Utilizare și Analiză
+## 1-4. Colectarea de Date de Utilizare și Analiză
 
 Aplicația folosește Firebase Analytics (furnizat de Google) pentru a înțelege cum este utilizată aplicația și pentru a îmbunătăți experiența utilizatorilor.
 
@@ -59,7 +76,13 @@ Aceste date sunt transmise către serverele Firebase (Google) și sunt stocate c
 
 Pentru mai multe informații despre cum Google procesează datele, consultați: [https://firebase.google.com/support/privacy](https://firebase.google.com/support/privacy)
 
-## 1-4. Servicii Terțe
+## 1-5. Comunicări prin email
+
+La crearea contului îți poți exprima acordul pentru a primi ocazional emailuri cu noutăți despre aplicație și sfaturi de fitness. Pentru trimiterea emailurilor folosim serviciul Resend, care primește adresa ta de email și numele afișat.
+
+Te poți dezabona oricând folosind linkul de dezabonare din orice email. La ștergerea contului, adresa ta este eliminată și din lista de emailuri.
+
+## 1-6. Servicii Terțe
 
 Aplicația folosește următoarele servicii terțe:
 
@@ -68,24 +91,33 @@ Aplicația folosește următoarele servicii terțe:
 3. **Firebase Firestore (Google)** - pentru sincronizarea datelor între dispozitive
 4. **Google Sign-In** - pentru autentificare
 5. **Apple Sign-In** - pentru autentificare
-6. **Facebook SDK** - pentru evenimente de conversie publicitară
+6. **RevenueCat** - pentru gestionarea achizițiilor și abonamentelor; primește informații despre tranzacțiile tale din App Store și identificatorul contului tău
+7. **Resend** - pentru trimiterea de emailuri (adresa de email și numele afișat)
+8. **Facebook SDK** - pentru evenimente de conversie publicitară
 
 Aceste servicii pot colecta date conform propriilor politici de confidențialitate:
 - Firebase Privacy: [https://firebase.google.com/support/privacy](https://firebase.google.com/support/privacy)
 - Google Privacy: [https://policies.google.com/privacy](https://policies.google.com/privacy)
+- RevenueCat Privacy: [https://www.revenuecat.com/privacy](https://www.revenuecat.com/privacy)
+- Resend Privacy: [https://resend.com/legal/privacy-policy](https://resend.com/legal/privacy-policy)
 
-## 1-5. Partajarea Datelor
+## 1-7. Partajarea Datelor
 
 **Datele tale sunt partajate cu:**
-- **Firebase/Google**: evenimente de utilizare, stare premium, autentificare
+- **Firebase/Google**: evenimente de utilizare, stare premium, autentificare, datele sincronizate (răspunsurile la chestionar, planul de antrenament și — doar cu consimțământul tău explicit — datele agregate de sănătate din secțiunea 1-2)
+- **RevenueCat**: tranzacțiile de achiziție și identificatorul contului, pentru validarea și gestionarea abonamentelor
+- **Resend**: adresa de email și numele afișat, pentru comunicări prin email
 - **Facebook**: evenimente de achiziție (pentru optimizarea publicitară)
 
-**Important:** Datele Apple Health rămân pe dispozitivul tău și NU sunt partajate niciodată.
+**Important:** Datele brute Apple Health (mostre de puls, antrenamente individuale) rămân pe dispozitivul tău și NU sunt partajate niciodată. Datele agregate descrise în secțiunea 1-2 sunt sincronizate doar dacă activezi explicit această opțiune.
 
-## 1-6. Reținerea Datelor
+## 1-8. Reținerea Datelor
 
 - **Datele Apple Health**: stocate local, șterse la dezinstalare
-- **Datele Firebase (autentificare, premium status)**: reținute până la ștergerea contului
+- **Datele agregate sincronizate (secțiunea 1-2)**: reținute până la retragerea consimțământului sau ștergerea contului — oricare survine prima
+- **Datele Firebase (autentificare, premium status, chestionar, plan de antrenament)**: reținute până la ștergerea contului
+- **Datele RevenueCat (istoric achiziții)**: reținute conform politicii RevenueCat, cât timp contul există
+- **Adresa de email (Resend)**: reținută până la dezabonare sau ștergerea contului
 - **Datele de analiză**: reținute conform politicii Firebase (maxim 14 luni pentru rapoarte)
 
 # 2. Securitate
@@ -95,7 +127,9 @@ Securitatea informațiilor tale este importantă pentru noi, dar nicio modalitat
 # 3. Drepturile Tale
 
 **Ai următoarele drepturi:**
-- Poți șterge contul tău și datele asociate direct din aplicație (secțiunea Profile)
+- Poți șterge contul tău și toate datele asociate direct din aplicație (Profil → Detalii cont → Șterge contul); ștergerea include datele din Firebase, datele agregate sincronizate și adresa din lista de emailuri
+- Poți exporta datele stocate în contul tău direct din aplicație (Profil → Detalii cont → Exportă datele mele)
+- Poți retrage oricând consimțământul pentru sincronizarea datelor agregate de sănătate (Profil → Detalii cont → Sincronizare progres); datele sincronizate vor fi șterse de pe servere
 - Poți dezactiva colectarea de date prin Apple Settings → Privacy → Analytics & Improvements
 - Datele de analiză sunt anonimizate și nu pot fi folosite pentru a te identifica personal
 
@@ -103,13 +137,14 @@ Securitatea informațiilor tale este importantă pentru noi, dar nicio modalitat
 
 **Pentru utilizatorii din Uniunea Europeană:**
 
-Baza legală pentru procesare: consimțământ și interes legitim
+Baza legală pentru procesare: consimțământ și interes legitim. Pentru datele agregate de sănătate (secțiunea 1-2), baza legală este consimțământul explicit conform art. 9 alin. (2) lit. (a) GDPR, pe care îl poți retrage oricând.
 
 **Drepturile tale conform GDPR:**
-- Dreptul la acces: poți solicita o copie a datelor tale personale
+- Dreptul la acces: poți solicita o copie a datelor tale personale (sau folosi exportul din aplicație)
 - Dreptul la rectificare: poți corecta datele inexacte
-- Dreptul la ștergere: poți solicita ștergerea datelor tale
+- Dreptul la ștergere: poți solicita ștergerea datelor tale (sau folosi ștergerea contului din aplicație)
 - Dreptul la portabilitate: poți solicita transferul datelor tale
+- Dreptul de retragere a consimțământului: pentru sincronizarea datelor agregate de sănătate, direct din aplicație
 
 **Contact pentru cereri GDPR:** davidmanda1998@gmail.com
 
