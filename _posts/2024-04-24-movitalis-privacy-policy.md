@@ -72,17 +72,29 @@ Aceste date sunt transmise către serverele Firebase (Google) și sunt stocate c
 **Datele de analiză nu includ:**
 - Datele tale Apple Health
 - Rezultatele testelor de forță și mobilitate
-- Informații personale identificabile (nume, email)
+- Informații personale identificabile (nume, email) — acestea sunt stocate separat, în contul tău (vezi secțiunea 1-5)
 
 Pentru mai multe informații despre cum Google procesează datele, consultați: [https://firebase.google.com/support/privacy](https://firebase.google.com/support/privacy)
 
-## 1-5. Comunicări prin email
+## 1-5. Datele contului
+
+La crearea contului (prin Apple Sign-In sau Google Sign-In), stocăm în Firebase Firestore următoarele date asociate contului tău:
+
+- Adresa de email și numele afișat
+- Data creării contului și data ultimei autentificări
+- Răspunsurile tale la chestionarul inițial (nivel de activitate, obiective de sănătate)
+- Planul tău de antrenament și istoricul modificărilor acestuia
+- Starea abonamentului premium
+
+Aceste date sunt folosite pentru funcționarea contului, sincronizarea între dispozitive și verificarea abonamentului. Ele sunt șterse integral la ștergerea contului din aplicație.
+
+## 1-6. Comunicări prin email
 
 La crearea contului îți poți exprima acordul pentru a primi ocazional emailuri cu noutăți despre aplicație și sfaturi de fitness. Pentru trimiterea emailurilor folosim serviciul Resend, care primește adresa ta de email și numele afișat.
 
 Te poți dezabona oricând folosind linkul de dezabonare din orice email. La ștergerea contului, adresa ta este eliminată și din lista de emailuri.
 
-## 1-6. Servicii Terțe
+## 1-7. Servicii Terțe
 
 Aplicația folosește următoarele servicii terțe:
 
@@ -101,7 +113,7 @@ Aceste servicii pot colecta date conform propriilor politici de confidențialita
 - RevenueCat Privacy: [https://www.revenuecat.com/privacy](https://www.revenuecat.com/privacy)
 - Resend Privacy: [https://resend.com/legal/privacy-policy](https://resend.com/legal/privacy-policy)
 
-## 1-7. Partajarea Datelor
+## 1-8. Partajarea Datelor
 
 **Datele tale sunt partajate cu:**
 - **Firebase/Google**: evenimente de utilizare, stare premium, autentificare, datele sincronizate (răspunsurile la chestionar, planul de antrenament și — doar cu consimțământul tău explicit — datele agregate de sănătate din secțiunea 1-2)
@@ -111,7 +123,7 @@ Aceste servicii pot colecta date conform propriilor politici de confidențialita
 
 **Important:** Datele brute Apple Health (mostre de puls, antrenamente individuale) rămân pe dispozitivul tău și NU sunt partajate niciodată. Datele agregate descrise în secțiunea 1-2 sunt sincronizate doar dacă activezi explicit această opțiune.
 
-## 1-8. Reținerea Datelor
+## 1-9. Reținerea Datelor
 
 - **Datele Apple Health**: stocate local, șterse la dezinstalare
 - **Datele agregate sincronizate (secțiunea 1-2)**: reținute până la retragerea consimțământului sau ștergerea contului — oricare survine prima
