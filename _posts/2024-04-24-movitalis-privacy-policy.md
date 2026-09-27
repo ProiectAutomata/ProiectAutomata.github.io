@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Politica de confidențialitate"
+title: "Politica de confidențialitate Movitalis"
 author: "David Manda"
 categories: article
 tags: [movitalis-privacy]
