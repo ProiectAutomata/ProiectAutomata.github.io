@@ -122,9 +122,24 @@ Poți conecta asistentul Claude (dezvoltat de Anthropic) la contul tău Movitali
 - Claude are acces **doar la citire** la datele sincronizate în contul tău (secțiunea 1-2): profilul de antrenament și antrenamentele din ultimele 6 luni. Nu poate modifica sau șterge date.
 - Datele sunt citite doar când pui o întrebare în Claude; prelucrarea lor de către Anthropic este guvernată de politica de confidențialitate Anthropic și de setările contului tău Claude.
 - Datele citite din Strava nu sunt niciodată transmise către Claude.
+- **Declarație de transparență privind inteligența artificială:** Claude este un sistem de inteligență artificială. Dacă ai conectat Garmin Connect™ (secțiunea 1-9), antrenamentele sincronizate pot include date provenite de la dispozitivele Garmin (pulsul, pauzele, traseul), marcate ca atare. Claude le prelucrează doar după consimțământul tău explicit (aprobarea conexiunii în aplicație) și doar pentru a-ți răspunde la întrebări; nici Movitalis, nici datele tale nu sunt folosite pentru antrenarea modelelor de inteligență artificială. Îți poți retrage consimțământul oricând, cu un singur pas: Profil → Detalii cont → Claude → Revocă.
 - Poți revoca accesul oricând (Profil → Detalii cont → Claude); revocarea, retragerea consimțământului pentru sincronizare sau ștergerea contului șterg tokenurile de acces.
 
-## 1-9. Servicii Terțe
+## 1-9. Integrarea cu Garmin Connect™ (opțională)
+
+Dacă îți conectezi contul Garmin Connect™ (Profil → Garmin Connect™), aplicația primește de la Garmin, prin Garmin Connect Developer Program, activitățile pe care le sincronizezi după conectare, doar cu permisiunile pe care le aprobi pe pagina de autorizare Garmin.
+
+- **Ce date primim:** pentru fiecare activitate: ora de început, tipul activității, modelul dispozitivului, pulsul înregistrat, perioadele de pauză ale cronometrului și traseul GPS (cu altitudinea). Nu primim istoricul dinainte de conectare și nu primim alte date Garmin (somn, stres, date zilnice etc.).
+- **Cum le folosim:** doar pentru analiza antrenamentelor tale în aplicație: minutele în Zona 2 și VO₂max, durata activă fără pauze, harta traseului și cardurile de partajare. Dacă îți dai permisiunea, pulsul este salvat și în Apple Health. Oriunde apar, datele sunt marcate „Garmin [modelul dispozitivului]”.
+- **Unde sunt procesate:** Garmin trimite activitățile către serverele noastre (Google Firebase: Cloud Functions în SUA, Firestore în Uniunea Europeană), unde păstrăm o copie compactă în contul tău, de unde aplicația o descarcă pe dispozitiv. Tokenurile de acces Garmin sunt păstrate doar pe servere, inaccesibile aplicației și altor utilizatori.
+- **Cine mai primește datele:** Google Firebase, ca furnizor de găzduire, și — doar dacă aprobi explicit integrarea cu Claude (secțiunea 1-8) — Anthropic, care le poate citi la cererea ta. Nu vindem și nu partajăm datele Garmin cu alți terți și nu le folosim pentru publicitate.
+- **Inteligență artificială:** vezi declarația de transparență din secțiunea 1-8. Datele Garmin și cele derivate din ele nu sunt folosite niciodată pentru antrenarea, evaluarea sau îmbunătățirea modelelor de inteligență artificială.
+- **Păstrare:** fiecare activitate primită este păstrată pe servere cel mult 6 luni de la data ei, sau până la deconectare, retragerea permisiunii în Garmin Connect™ sau ștergerea contului — oricare survine prima.
+- **Deconectarea:** din Profil → Garmin Connect™ → Deconectează, sau din Garmin Connect™ → Setări → Aplicații conectate. În ambele cazuri, înregistrarea aplicației este retrasă la Garmin, iar datele primite de la Garmin sunt șterse de pe servere și de pe dispozitiv. Pulsul salvat în Apple Health rămâne acolo până îl ștergi din aplicația Sănătate.
+
+Datele din contul tău Garmin sunt procesate de Garmin conform politicii de confidențialitate Garmin: [https://www.garmin.com/privacy/connect/](https://www.garmin.com/privacy/connect/)
+
+## 1-10. Servicii Terțe
 
 Aplicația folosește următoarele servicii terțe:
 
@@ -138,6 +153,7 @@ Aplicația folosește următoarele servicii terțe:
 8. **Facebook SDK** - pentru evenimente de conversie publicitară
 9. **Strava** (opțional, doar dacă îți conectezi contul) - pentru trimiterea antrenamentelor și completarea analizei (vezi secțiunea 1-7)
 10. **Claude (Anthropic)** (opțional, doar dacă aprobi conexiunea) - citește antrenamentele sincronizate pentru a răspunde întrebărilor tale (vezi secțiunea 1-8)
+11. **Garmin Connect™** (opțional, doar dacă îți conectezi contul) - trimite activitățile tale Garmin pentru analiza antrenamentelor (vezi secțiunea 1-9)
 
 Aceste servicii pot colecta date conform propriilor politici de confidențialitate:
 - Firebase Privacy: [https://firebase.google.com/support/privacy](https://firebase.google.com/support/privacy)
@@ -146,8 +162,9 @@ Aceste servicii pot colecta date conform propriilor politici de confidențialita
 - Resend Privacy: [https://resend.com/legal/privacy-policy](https://resend.com/legal/privacy-policy)
 - Strava Privacy: [https://www.strava.com/legal/privacy](https://www.strava.com/legal/privacy)
 - Anthropic Privacy: [https://www.anthropic.com/legal/privacy](https://www.anthropic.com/legal/privacy)
+- Garmin Privacy: [https://www.garmin.com/privacy/connect/](https://www.garmin.com/privacy/connect/)
 
-## 1-10. Partajarea Datelor
+## 1-11. Partajarea Datelor
 
 **Datele tale sunt partajate cu:**
 - **Firebase/Google**: evenimente de utilizare, stare premium, autentificare, datele sincronizate (răspunsurile la chestionar, planul de antrenament și — doar cu consimțământul tău explicit — datele de sănătate din secțiunea 1-2)
@@ -155,15 +172,17 @@ Aceste servicii pot colecta date conform propriilor politici de confidențialita
 - **Resend**: adresa de email și numele afișat, pentru comunicări prin email
 - **Facebook**: evenimente de achiziție (pentru optimizarea publicitară)
 - **Strava** (doar dacă îți conectezi contul): antrenamentele înregistrate cu Movitalis, inclusiv pulsul și traseul GPS (secțiunea 1-7)
-- **Claude / Anthropic** (doar dacă aprobi conexiunea): antrenamentele și profilul de antrenament sincronizate (secțiunea 1-8), citite la cererea ta
+- **Claude / Anthropic** (doar dacă aprobi conexiunea): antrenamentele și profilul de antrenament sincronizate (secțiunea 1-8), citite la cererea ta, inclusiv datele Garmin marcate ca atare dacă ai conectat Garmin Connect™
+- **Garmin**: nu trimitem date către Garmin; doar primim de la Garmin activitățile pe care alegi să le partajezi (secțiunea 1-9)
 
 **Important:** Datele Apple Health rămân pe dispozitivul tău, cu excepția celor pe care alegi tu să le trimiți: datele de sănătate sincronizate (secțiunea 1-2, doar cu consimțământul tău explicit), antrenamentele trimise în contul tău Strava (secțiunea 1-7) și citirea datelor sincronizate de către integrările pe care le aprobi (secțiunea 1-8). Nu vindem datele tale și nu le folosim în scopuri de marketing.
 
-## 1-11. Reținerea Datelor
+## 1-12. Reținerea Datelor
 
 - **Datele Apple Health**: stocate local, șterse la dezinstalare
 - **Datele de sănătate sincronizate (secțiunea 1-2)**: antrenamentele individuale pentru o perioadă mobilă de 6 luni; toate datele sincronizate, până la retragerea consimțământului sau ștergerea contului — oricare survine prima
 - **Conexiunile cu integrări (Claude)**: tokenurile de acces sunt șterse la revocarea conexiunii sau la ștergerea contului
+- **Datele primite de la Garmin (secțiunea 1-9)**: cel mult 6 luni de la data fiecărei activități, pe servere și pe dispozitiv; șterse imediat la deconectare, la retragerea permisiunii în Garmin Connect™ sau la ștergerea contului, împreună cu tokenurile de acces
 - **Amprenta (hash) adresei de email pentru perioada de probă**: reținută și după ștergerea contului, pentru prevenirea abuzului (secțiunea 1-5)
 - **Datele Firebase (autentificare, premium status, chestionar, plan de antrenament)**: reținute până la ștergerea contului
 - **Datele RevenueCat (istoric achiziții)**: reținute conform politicii RevenueCat, cât timp contul există
@@ -183,6 +202,7 @@ Securitatea informațiilor tale este importantă pentru noi, dar nicio modalitat
 - Poți retrage oricând consimțământul pentru sincronizarea datelor de sănătate (Profil → Detalii cont → Sincronizare progres); datele sincronizate vor fi șterse de pe servere
 - Poți revoca oricând accesul unei integrări (Profil → Detalii cont → Claude)
 - Poți deconecta Strava oricând (Profil → Strava → Deconectează Strava); accesul aplicației este revocat și datele citite din Strava sunt șterse de pe dispozitiv
+- Poți deconecta Garmin Connect™ oricând (Profil → Garmin Connect™ → Deconectează sau din Garmin Connect™ → Setări → Aplicații conectate); datele primite de la Garmin sunt șterse de pe servere și de pe dispozitiv. Poți cere oricând o copie a lor, corectarea sau ștergerea lor la adresa de contact
 - Poți dezactiva colectarea de date prin Apple Settings → Privacy → Analytics & Improvements
 - Datele de analiză sunt anonimizate și nu pot fi folosite pentru a te identifica personal
 
