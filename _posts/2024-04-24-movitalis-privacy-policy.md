@@ -105,13 +105,13 @@ Te poți dezabona oricând folosind linkul de dezabonare din orice email. La șt
 
 ## 1-7. Integrarea cu Strava (opțională)
 
-Dacă îți conectezi contul Strava (Profil → Strava), aplicația folosește API-ul Strava, doar cu permisiunile pe care le aprobi pe pagina de autorizare Strava:
+Dacă îți conectezi contul Strava (Profil → Strava), aplicația folosește API-ul Strava doar pentru a **trimite** antrenamentele tale în Strava, cu permisiunile pe care le aprobi pe pagina de autorizare Strava:
 
 - **Trimiterea antrenamentelor:** antrenamentele înregistrate cu Movitalis sunt încărcate în contul tău Strava: tipul activității, ora, durata, distanța, caloriile, pulsul și traseul GPS, plus titlul și descrierea pe care le alegi în setările Strava din aplicație. Poți opri oricând încărcarea automată.
-- **Completarea analizei:** pentru antrenamentele înregistrate cu alte ceasuri (de ex. COROS, Garmin), aplicația citește din Strava activitatea corespunzătoare (puls, perioadele de pauză, traseul GPS), ca analiza să fie completă. Dacă îți dai permisiunea, pulsul este salvat și în Apple Health.
-- Datele brute citite din Strava sunt stocate doar local, pe dispozitivul tău. Nu sunt trimise către serverele noastre și nu sunt transmise către instrumente de inteligență artificială sau către alți terți.
+- **Verificarea duplicatelor:** înainte de fiecare încărcare, aplicația verifică lista activităților tale Strava din intervalul respectiv, ca să nu creeze o copie a unei activități deja existente. Datele citite pentru această verificare nu sunt stocate, nu ajung pe serverele noastre și nu sunt transmise către instrumente de inteligență artificială sau către alți terți.
+- Aplicația nu mai citește din Strava pulsul, pauzele sau traseul altor activități. Datele citite astfel de versiunile anterioare ale aplicației sunt șterse automat de pe dispozitiv, inclusiv pulsul pe care aplicația îl salvase în Apple Health.
 - Tokenurile de acces Strava sunt păstrate în Keychain-ul dispozitivului.
-- **Deconectarea:** din Profil → Strava → Deconectează Strava. Accesul aplicației este revocat la Strava, iar datele citite din Strava sunt șterse de pe dispozitiv. Activitățile deja încărcate rămân în contul tău Strava, de unde le poți șterge. Pulsul salvat în Apple Health rămâne acolo până îl ștergi din aplicația Sănătate.
+- **Deconectarea:** din Profil → Strava → Deconectează Strava. Accesul aplicației este revocat la Strava. Activitățile deja încărcate rămân în contul tău Strava, de unde le poți șterge.
 
 Datele trimise către Strava sunt procesate conform politicii de confidențialitate Strava: [https://www.strava.com/legal/privacy](https://www.strava.com/legal/privacy)
 
@@ -151,7 +151,7 @@ Aplicația folosește următoarele servicii terțe:
 6. **RevenueCat** - pentru gestionarea achizițiilor și abonamentelor; primește informații despre tranzacțiile tale din App Store și identificatorul contului tău
 7. **Resend** - pentru trimiterea de emailuri (adresa de email și numele afișat)
 8. **Facebook SDK** - pentru evenimente de conversie publicitară
-9. **Strava** (opțional, doar dacă îți conectezi contul) - pentru trimiterea antrenamentelor și completarea analizei (vezi secțiunea 1-7)
+9. **Strava** (opțional, doar dacă îți conectezi contul) - pentru trimiterea antrenamentelor (vezi secțiunea 1-7)
 10. **Claude (Anthropic)** (opțional, doar dacă aprobi conexiunea) - citește antrenamentele sincronizate pentru a răspunde întrebărilor tale (vezi secțiunea 1-8)
 11. **Garmin Connect™** (opțional, doar dacă îți conectezi contul) - trimite activitățile tale Garmin pentru analiza antrenamentelor (vezi secțiunea 1-9)
 
@@ -188,7 +188,7 @@ Aceste servicii pot colecta date conform propriilor politici de confidențialita
 - **Datele RevenueCat (istoric achiziții)**: reținute conform politicii RevenueCat, cât timp contul există
 - **Adresa de email (Resend)**: reținută până la dezabonare sau ștergerea contului
 - **Datele de analiză**: reținute conform politicii Firebase (maxim 14 luni pentru rapoarte)
-- **Datele citite din Strava**: stocate doar local, șterse la deconectarea Strava sau la dezinstalare; activitățile trimise către Strava rămân în contul tău Strava până le ștergi de acolo
+- **Strava**: aplicația nu stochează date citite din Strava; activitățile trimise către Strava rămân în contul tău Strava până le ștergi de acolo
 
 # 2. Securitate
 
@@ -201,7 +201,7 @@ Securitatea informațiilor tale este importantă pentru noi, dar nicio modalitat
 - Poți exporta datele stocate în contul tău direct din aplicație (Profil → Detalii cont → Exportă datele mele)
 - Poți retrage oricând consimțământul pentru sincronizarea datelor de sănătate (Profil → Detalii cont → Sincronizare progres); datele sincronizate vor fi șterse de pe servere
 - Poți revoca oricând accesul unei integrări (Profil → Detalii cont → Claude)
-- Poți deconecta Strava oricând (Profil → Strava → Deconectează Strava); accesul aplicației este revocat și datele citite din Strava sunt șterse de pe dispozitiv
+- Poți deconecta Strava oricând (Profil → Strava → Deconectează Strava); accesul aplicației este revocat
 - Poți deconecta Garmin Connect™ oricând (Profil → Garmin Connect™ → Deconectează sau din Garmin Connect™ → Setări → Aplicații conectate); datele primite de la Garmin sunt șterse de pe servere și de pe dispozitiv. Poți cere oricând o copie a lor, corectarea sau ștergerea lor la adresa de contact
 - Poți dezactiva colectarea de date prin Apple Settings → Privacy → Analytics & Improvements
 - Datele de analiză sunt anonimizate și nu pot fi folosite pentru a te identifica personal
