@@ -153,7 +153,7 @@ Aplicația folosește următoarele servicii terțe:
 5. **Apple Sign-In** - pentru autentificare
 6. **RevenueCat** - pentru gestionarea achizițiilor și abonamentelor; primește informații despre tranzacțiile tale din App Store și identificatorul contului tău
 7. **Resend** - pentru trimiterea de emailuri (adresa de email și numele afișat)
-8. **Facebook SDK (Meta)** - pentru măsurarea eficienței reclamelor: primește evenimente despre folosirea aplicației (deschiderea aplicației, finalizarea configurării inițiale cu ținta săptămânală aleasă, acordarea sau refuzul permisiunilor, afișarea ofertei premium și achizițiile). Identificatorul de publicitate al dispozitivului este transmis doar dacă permiți urmărirea în fereastra afișată de iOS
+8. **Facebook SDK (Meta)** - pentru măsurarea eficienței reclamelor, **doar dacă permiți urmărirea** în fereastra afișată de iOS. În acest caz primește identificatorul de publicitate al dispozitivului și evenimente despre folosirea aplicației (deschiderea aplicației, finalizarea configurării inițiale cu ținta săptămânală aleasă, acordarea sau refuzul permisiunilor, afișarea ofertei premium și achizițiile). Dacă refuzi, aplicația nu trimite niciun eveniment către Meta. Îți poți schimba alegerea din Configurări iOS → Movitalis
 9. **Strava** (opțional, doar dacă îți conectezi contul) - pentru trimiterea antrenamentelor (vezi secțiunea 1-7)
 10. **Claude (Anthropic)** (opțional, doar dacă aprobi conexiunea) - citește antrenamentele sincronizate pentru a răspunde întrebărilor tale (vezi secțiunea 1-8)
 11. **Garmin Connect™** (opțional, doar dacă îți conectezi contul) - trimite activitățile tale Garmin pentru analiza antrenamentelor (vezi secțiunea 1-9)
@@ -173,7 +173,7 @@ Aceste servicii pot colecta date conform propriilor politici de confidențialita
 - **Firebase/Google**: evenimente de utilizare, stare premium, autentificare, datele sincronizate (răspunsurile la chestionar, planul de antrenament și — doar cu consimțământul tău explicit — datele de sănătate din secțiunea 1-2)
 - **RevenueCat**: tranzacțiile de achiziție și identificatorul contului, pentru validarea și gestionarea abonamentelor
 - **Resend**: adresa de email și numele afișat, pentru comunicări prin email
-- **Facebook (Meta)**: evenimentele de utilizare și de achiziție descrise în secțiunea 1-10 (pentru măsurarea reclamelor); nu primește date Apple Health, date Garmin, numele sau adresa ta de email
+- **Facebook (Meta)** (doar dacă permiți urmărirea): evenimentele de utilizare și de achiziție descrise în secțiunea 1-10 (pentru măsurarea reclamelor); nu primește date Apple Health, date Garmin, numele sau adresa ta de email
 - **Strava** (doar dacă îți conectezi contul): antrenamentele înregistrate cu Movitalis, inclusiv pulsul și traseul GPS (secțiunea 1-7)
 - **Claude / Anthropic** (doar dacă aprobi conexiunea): antrenamentele și profilul de antrenament sincronizate (secțiunea 1-8), citite la cererea ta, inclusiv datele Garmin marcate ca atare dacă ai conectat Garmin Connect™
 - **Garmin**: nu trimitem date către Garmin; doar primim de la Garmin activitățile pe care alegi să le partajezi (secțiunea 1-9)
@@ -206,7 +206,7 @@ Securitatea informațiilor tale este importantă pentru noi, dar nicio modalitat
 - Poți revoca oricând accesul unei integrări (Profil → Detalii cont → Claude)
 - Poți deconecta Strava oricând (Profil → Strava → Deconectează Strava); accesul aplicației este revocat
 - Poți deconecta Garmin Connect™ oricând (Profil → Garmin Connect™ → Deconectează sau din Garmin Connect™ → Setări → Aplicații conectate); datele primite de la Garmin sunt șterse de pe servere și de pe dispozitiv. Poți cere oricând o copie a lor, corectarea sau ștergerea lor la adresa de contact
-- Datele de analiză sunt pseudonimizate: sunt legate de identificatorul contului tău, nu de numele sau adresa ta de email. Te poți opune prelucrării lor sau poți cere ștergerea lor la adresa de contact
+- Datele de analiză sunt pseudonimizate: sunt legate de identificatorul contului tău, nu de numele sau adresa ta de email. Le poți opri oricând din aplicație (Profil → Detalii cont → Statistici de utilizare) și poți cere ștergerea lor la adresa de contact
 - Poți depune o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP), [www.dataprotection.ro](https://www.dataprotection.ro)
 
 # 4. Conformitate GDPR
