@@ -8,11 +8,11 @@ image: politica-de-confidentialitate-1.webp
 duration: 4
 ---
 
-Ultima modificare: 12 Noiembrie, 2026
+Ultima modificare: 15 Noiembrie, 2026
 
-David Manda este operatorul aplicației iOS Movitalis ("aplicația").
+Operatorul datelor prelucrate prin aplicația iOS Movitalis ("aplicația") este PROIECT AUTOMATA S.R.L., CUI 46790951, J23/6066/2022, cu sediul în Șos. Unirii nr. 236C, Com. Corbeanca, Jud. Ilfov, România, reprezentată de David Manda ("noi"). Contact: dmanda@automata.ltd.
 
-Folosind aplicația, ești de acord cu colectarea și folosirea datelor în concordanță cu această politică de confidențialitate.
+Această politică descrie ce date prelucrăm, în ce scop, pe ce bază legală și ce drepturi ai.
 
 # 1. Colectarea și folosirea datelor
 
@@ -72,9 +72,11 @@ Aplicația folosește Firebase Analytics (furnizat de Google) pentru a înțeleg
 **Date colectate automat:**
 - Evenimentele de autentificare (înregistrare și autentificare prin Apple/Google)
 - Paginile vizitate în aplicație (Weekly, Plan, Analysis, Profile)
+- Pașii parcurși în configurarea inițială și răspunsurile la două întrebări din chestionar (cum resimți antrenamentul și ce te împiedică să te antrenezi)
 - Achizițiile de abonamente premium
 - Starea abonamentului (utilizator gratuit sau premium)
-- Identificator unic de utilizator (Firebase UID)
+- Identificator unic de utilizator (Firebase UID) și identificatorul instalării aplicației
+- Rapoarte tehnice de erori (Firebase Crashlytics), dacă aplicația se închide neașteptat
 
 Aceste date sunt transmise către serverele Firebase (Google) și sunt stocate conform politicii de confidențialitate Google Firebase.
 
@@ -99,7 +101,7 @@ Aceste date sunt folosite pentru funcționarea contului, sincronizarea între di
 
 ## 1-6. Comunicări prin email
 
-La crearea contului îți poți exprima acordul pentru a primi ocazional emailuri cu noutăți despre aplicație și sfaturi de fitness. Pentru trimiterea emailurilor folosim serviciul Resend, care primește adresa ta de email și numele afișat.
+După crearea contului primești un email de bun venit cu planul tău. Separat, la crearea contului îți poți exprima acordul (opțiune dezactivată implicit) pentru a primi ocazional emailuri cu noutăți despre aplicație și sfaturi de fitness. Pentru trimiterea emailurilor folosim serviciul Resend, care primește adresa ta de email, numele afișat și conținutul emailului (inclusiv ținta săptămânală și planul primei săptămâni).
 
 Te poți dezabona oricând folosind linkul de dezabonare din orice email. La ștergerea contului, adresa ta este eliminată și din lista de emailuri.
 
@@ -129,7 +131,8 @@ Poți conecta asistentul Claude (dezvoltat de Anthropic) la contul tău Movitali
 
 Dacă îți conectezi contul Garmin Connect™ (Profil → Garmin Connect™), aplicația primește de la Garmin, prin Garmin Connect Developer Program, activitățile pe care le sincronizezi după conectare, doar cu permisiunile pe care le aprobi pe pagina de autorizare Garmin.
 
-- **Ce date primim:** pentru fiecare activitate: ora de început, tipul activității, modelul dispozitivului, pulsul înregistrat, perioadele de pauză ale cronometrului și traseul GPS (cu altitudinea). Dacă permiți și partajarea datelor de sănătate, primim zilnic valorile VO₂max (alergare și ciclism) și vârsta de fitness calculate de Garmin. Nu primim istoricul dinainte de conectare și nu primim alte date Garmin (somn, stres, pași etc.).
+- **Baza legală:** consimțământul tău explicit (art. 9 alin. (2) lit. (a) GDPR), exprimat prin conectarea contului și prin permisiunile alese pe pagina Garmin; îl poți retrage oricând prin deconectare.
+- **Ce date primim:** pentru fiecare activitate: ora de început, tipul activității, modelul dispozitivului, pulsul înregistrat, perioadele de pauză ale cronometrului și traseul GPS (cu altitudinea). Dacă permiți și partajarea datelor de sănătate, primim zilnic valorile VO₂max (alergare și ciclism) și vârsta de fitness calculate de Garmin. Dacă acorzi în Garmin Connect™ și permisiunea pentru date istorice, primim și activitățile și valorile VO₂max din cele 30 de zile dinaintea conectării; altfel nu primim istoricul. Nu primim alte date Garmin (somn, stres, pași etc.).
 - **Cum le folosim:** doar pentru analiza antrenamentelor tale în aplicație: minutele în Zona 2 și VO₂max, durata activă fără pauze, harta traseului și cardurile de partajare. VO₂max-ul Garmin este afișat ca VO₂max-ul tău atunci când Apple Health nu are o valoare recentă de la alt dispozitiv. Dacă îți dai permisiunea, pulsul și VO₂max-ul sunt salvate și în Apple Health. Oriunde apar, datele sunt marcate „Garmin [modelul dispozitivului]” sau „Garmin”.
 - **Unde sunt procesate:** Garmin trimite activitățile către serverele noastre (Google Firebase: Cloud Functions în SUA, Firestore în Uniunea Europeană), unde păstrăm o copie compactă în contul tău, de unde aplicația o descarcă pe dispozitiv. Tokenurile de acces Garmin sunt păstrate doar pe servere, inaccesibile aplicației și altor utilizatori.
 - **Cine mai primește datele:** Google Firebase, ca furnizor de găzduire, și — doar dacă aprobi explicit integrarea cu Claude (secțiunea 1-8) — Anthropic, care le poate citi la cererea ta. Nu vindem și nu partajăm datele Garmin cu alți terți și nu le folosim pentru publicitate.
@@ -150,7 +153,7 @@ Aplicația folosește următoarele servicii terțe:
 5. **Apple Sign-In** - pentru autentificare
 6. **RevenueCat** - pentru gestionarea achizițiilor și abonamentelor; primește informații despre tranzacțiile tale din App Store și identificatorul contului tău
 7. **Resend** - pentru trimiterea de emailuri (adresa de email și numele afișat)
-8. **Facebook SDK** - pentru evenimente de conversie publicitară
+8. **Facebook SDK (Meta)** - pentru măsurarea eficienței reclamelor: primește evenimente despre folosirea aplicației (deschiderea aplicației, finalizarea configurării inițiale cu ținta săptămânală aleasă, acordarea sau refuzul permisiunilor, afișarea ofertei premium și achizițiile). Identificatorul de publicitate al dispozitivului este transmis doar dacă permiți urmărirea în fereastra afișată de iOS
 9. **Strava** (opțional, doar dacă îți conectezi contul) - pentru trimiterea antrenamentelor (vezi secțiunea 1-7)
 10. **Claude (Anthropic)** (opțional, doar dacă aprobi conexiunea) - citește antrenamentele sincronizate pentru a răspunde întrebărilor tale (vezi secțiunea 1-8)
 11. **Garmin Connect™** (opțional, doar dacă îți conectezi contul) - trimite activitățile tale Garmin pentru analiza antrenamentelor (vezi secțiunea 1-9)
@@ -170,7 +173,7 @@ Aceste servicii pot colecta date conform propriilor politici de confidențialita
 - **Firebase/Google**: evenimente de utilizare, stare premium, autentificare, datele sincronizate (răspunsurile la chestionar, planul de antrenament și — doar cu consimțământul tău explicit — datele de sănătate din secțiunea 1-2)
 - **RevenueCat**: tranzacțiile de achiziție și identificatorul contului, pentru validarea și gestionarea abonamentelor
 - **Resend**: adresa de email și numele afișat, pentru comunicări prin email
-- **Facebook**: evenimente de achiziție (pentru optimizarea publicitară)
+- **Facebook (Meta)**: evenimentele de utilizare și de achiziție descrise în secțiunea 1-10 (pentru măsurarea reclamelor); nu primește date Apple Health, date Garmin, numele sau adresa ta de email
 - **Strava** (doar dacă îți conectezi contul): antrenamentele înregistrate cu Movitalis, inclusiv pulsul și traseul GPS (secțiunea 1-7)
 - **Claude / Anthropic** (doar dacă aprobi conexiunea): antrenamentele și profilul de antrenament sincronizate (secțiunea 1-8), citite la cererea ta, inclusiv datele Garmin marcate ca atare dacă ai conectat Garmin Connect™
 - **Garmin**: nu trimitem date către Garmin; doar primim de la Garmin activitățile pe care alegi să le partajezi (secțiunea 1-9)
@@ -185,7 +188,7 @@ Aceste servicii pot colecta date conform propriilor politici de confidențialita
 - **Datele primite de la Garmin (secțiunea 1-9)**: cel mult 6 luni de la data fiecărei activități, pe servere și pe dispozitiv; șterse imediat la deconectare, la retragerea permisiunii în Garmin Connect™ sau la ștergerea contului, împreună cu tokenurile de acces
 - **Amprenta (hash) adresei de email pentru perioada de probă**: reținută și după ștergerea contului, pentru prevenirea abuzului (secțiunea 1-5)
 - **Datele Firebase (autentificare, premium status, chestionar, plan de antrenament)**: reținute până la ștergerea contului
-- **Datele RevenueCat (istoric achiziții)**: reținute conform politicii RevenueCat, cât timp contul există
+- **Datele RevenueCat (istoric achiziții)**: reținute conform politicii RevenueCat, sub identificatorul contului; după ștergerea contului acest identificator nu mai duce la nicio altă informație despre tine, iar la cerere (adresa de contact) ștergem și această înregistrare
 - **Adresa de email (Resend)**: reținută până la dezabonare sau ștergerea contului
 - **Datele de analiză**: reținute conform politicii Firebase (maxim 14 luni pentru rapoarte)
 - **Strava**: aplicația nu stochează date citite din Strava; activitățile trimise către Strava rămân în contul tău Strava până le ștergi de acolo
@@ -203,21 +206,33 @@ Securitatea informațiilor tale este importantă pentru noi, dar nicio modalitat
 - Poți revoca oricând accesul unei integrări (Profil → Detalii cont → Claude)
 - Poți deconecta Strava oricând (Profil → Strava → Deconectează Strava); accesul aplicației este revocat
 - Poți deconecta Garmin Connect™ oricând (Profil → Garmin Connect™ → Deconectează sau din Garmin Connect™ → Setări → Aplicații conectate); datele primite de la Garmin sunt șterse de pe servere și de pe dispozitiv. Poți cere oricând o copie a lor, corectarea sau ștergerea lor la adresa de contact
-- Poți dezactiva colectarea de date prin Apple Settings → Privacy → Analytics & Improvements
-- Datele de analiză sunt anonimizate și nu pot fi folosite pentru a te identifica personal
+- Datele de analiză sunt pseudonimizate: sunt legate de identificatorul contului tău, nu de numele sau adresa ta de email. Te poți opune prelucrării lor sau poți cere ștergerea lor la adresa de contact
+- Poți depune o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP), [www.dataprotection.ro](https://www.dataprotection.ro)
 
 # 4. Conformitate GDPR
 
 **Pentru utilizatorii din Uniunea Europeană:**
 
-Baza legală pentru procesare: consimțământ și interes legitim. Pentru datele de sănătate sincronizate (secțiunea 1-2), baza legală este consimțământul explicit conform art. 9 alin. (2) lit. (a) GDPR, pe care îl poți retrage oricând.
+**Baza legală pentru fiecare prelucrare:**
+- Datele contului, planul de antrenament, abonamentul și emailul de bun venit: executarea contractului cu tine (art. 6 alin. (1) lit. (b) GDPR)
+- Datele de sănătate sincronizate (secțiunea 1-2), datele Garmin (secțiunea 1-9) și citirea lor de către Claude (secțiunea 1-8): consimțământul tău explicit (art. 9 alin. (2) lit. (a) GDPR), pe care îl poți retrage oricând
+- Emailurile cu noutăți și urmărirea în scop publicitar: consimțământul tău (art. 6 alin. (1) lit. (a) GDPR)
+- Analiza utilizării, rapoartele de erori și prevenirea abuzului perioadei de probă: interesul nostru legitim de a îmbunătăți și proteja aplicația (art. 6 alin. (1) lit. (f) GDPR); te poți opune oricând la adresa de contact
+
+**Transferuri în afara Spațiului Economic European:** unii furnizori (Google — Cloud Functions, Analytics; Meta; RevenueCat; Resend; Anthropic, dacă aprobi integrarea) prelucrează date în Statele Unite. Transferurile se fac în baza Cadrului UE–SUA privind confidențialitatea datelor, acolo unde furnizorul este certificat, sau a clauzelor contractuale standard aprobate de Comisia Europeană.
+
+**Vârsta minimă:** aplicația nu se adresează persoanelor sub 16 ani și nu colectăm cu bună știință date ale acestora.
 
 **Drepturile tale conform GDPR:**
 - Dreptul la acces: poți solicita o copie a datelor tale personale (sau folosi exportul din aplicație)
 - Dreptul la rectificare: poți corecta datele inexacte
 - Dreptul la ștergere: poți solicita ștergerea datelor tale (sau folosi ștergerea contului din aplicație)
 - Dreptul la portabilitate: poți solicita transferul datelor tale
-- Dreptul de retragere a consimțământului: pentru sincronizarea datelor de sănătate, direct din aplicație
+- Dreptul de retragere a consimțământului: pentru sincronizarea datelor de sănătate și integrări, direct din aplicație
+- Dreptul la opoziție și la restricționarea prelucrării, pentru prelucrările bazate pe interesul legitim
+- Dreptul de a depune o plângere la ANSPDCP ([www.dataprotection.ro](https://www.dataprotection.ro))
+
+Răspundem cererilor în cel mult o lună.
 
 **Contact pentru cereri GDPR:** dmanda@automata.ltd
 
@@ -239,5 +254,6 @@ Rezervăm dreptul să schimbăm aplicația sau să o retragem. Nu vom fi conside
 
 Dacă ai orice întrebări legate de această Politică de Confidențialitate, te rugăm să ne contactezi.
 
-David Manda
+PROIECT AUTOMATA S.R.L.
+David Manda, administrator
 dmanda@automata.ltd
