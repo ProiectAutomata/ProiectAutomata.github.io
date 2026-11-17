@@ -121,7 +121,8 @@ Datele trimise către Strava sunt procesate conform politicii de confidențialit
 
 Poți conecta asistentul Claude (dezvoltat de Anthropic) la contul tău Movitalis, ca să-i poți pune întrebări despre antrenamentele tale. Conexiunea pornește din Claude și devine activă doar după ce o aprobi explicit în aplicația Movitalis.
 
-- Claude are acces **doar la citire** la datele sincronizate în contul tău (secțiunea 1-2): profilul de antrenament și antrenamentele din ultimele 6 luni. Nu poate modifica sau șterge date.
+- Claude are acces **la citire** la datele sincronizate în contul tău (secțiunea 1-2): profilul de antrenament și antrenamentele din ultimele 6 luni. Nu poate modifica sau șterge aceste date.
+- Dacă aprobi și această permisiune la conectare, Claude îți poate **propune un plan de antrenament**. Propunerea (zilele, tipul, durata, titlul și notițele antrenamentelor) este salvată în contul tău ca ciornă și nu schimbă nimic până nu o accepți tu în aplicație; o poți modifica sau respinge, iar la acceptare sau respingere ciorna este ștearsă. Conexiunile aprobate înainte de introducerea acestei permisiuni rămân doar în citire.
 - Datele sunt citite doar când pui o întrebare în Claude; prelucrarea lor de către Anthropic este guvernată de politica de confidențialitate Anthropic și de setările contului tău Claude.
 - Datele citite din Strava nu sunt niciodată transmise către Claude.
 - **Declarație de transparență privind inteligența artificială:** Claude este un sistem de inteligență artificială. Dacă ai conectat Garmin Connect™ (secțiunea 1-9), antrenamentele sincronizate pot include date provenite de la dispozitivele Garmin (pulsul, pauzele, traseul), marcate ca atare. Claude le prelucrează doar după consimțământul tău explicit (aprobarea conexiunii în aplicație) și doar pentru a-ți răspunde la întrebări; nici Movitalis, nici datele tale nu sunt folosite pentru antrenarea modelelor de inteligență artificială. Îți poți retrage consimțământul oricând, cu un singur pas: Profil → Detalii cont → Claude → Revocă.
@@ -184,7 +185,7 @@ Aceste servicii pot colecta date conform propriilor politici de confidențialita
 
 - **Datele Apple Health**: stocate local, șterse la dezinstalare
 - **Datele de sănătate sincronizate (secțiunea 1-2)**: antrenamentele individuale pentru o perioadă mobilă de 6 luni; toate datele sincronizate, până la retragerea consimțământului sau ștergerea contului — oricare survine prima
-- **Conexiunile cu integrări (Claude)**: tokenurile de acces sunt șterse la revocarea conexiunii sau la ștergerea contului
+- **Conexiunile cu integrări (Claude)**: tokenurile de acces sunt șterse la revocarea conexiunii sau la ștergerea contului; un plan propus rămas neacceptat este șters la acceptare, la respingere sau la ștergerea contului
 - **Datele primite de la Garmin (secțiunea 1-9)**: cel mult 6 luni de la data fiecărei activități, pe servere și pe dispozitiv; șterse imediat la deconectare, la retragerea permisiunii în Garmin Connect™ sau la ștergerea contului, împreună cu tokenurile de acces
 - **Amprenta (hash) adresei de email pentru perioada de probă**: reținută și după ștergerea contului, pentru prevenirea abuzului (secțiunea 1-5)
 - **Datele Firebase (autentificare, premium status, chestionar, plan de antrenament)**: reținute până la ștergerea contului
