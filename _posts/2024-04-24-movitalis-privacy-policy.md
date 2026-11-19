@@ -8,7 +8,7 @@ image: politica-de-confidentialitate-1.webp
 duration: 4
 ---
 
-Ultima modificare: 15 Noiembrie, 2026
+Ultima modificare: 19 Noiembrie, 2026
 
 Operatorul datelor prelucrate prin aplicația iOS Movitalis ("aplicația") este PROIECT AUTOMATA S.R.L., CUI 46790951, J23/6066/2022, cu sediul în Șos. Unirii nr. 236C, Com. Corbeanca, Jud. Ilfov, România, reprezentată de David Manda ("noi"). Contact: dmanda@automata.ltd.
 
@@ -20,12 +20,16 @@ Această politică descrie ce date prelucrăm, în ce scop, pe ce bază legală 
 
 Aplicația folosește API-urile Apple pentru a citi sau a scrie anumite date din/în aplicația Apple Health de pe dispozitivul tău ("Date Apple Health"). Aceste informații includ:
 
-- Antrenamente
+- Antrenamente, inclusiv traseul GPS
 - Puls
 - Distanță
 - Număr pași
+- VO₂ max
 - Data nașterii
 - Sexul biologic
+- Somnul, variabilitatea pulsului (HRV) și pulsul de repaus, folosite doar pentru verificarea „Cum te simți azi” (dacă ești pregătit pentru o sesiune grea), după ce o activezi
+
+Aplicația scrie în Apple Health antrenamentele pe care le adaugi în Movitalis, valorile VO₂ max pe care le introduci și, dacă ai conectat Garmin Connect™ și îți dai permisiunea, pulsul și VO₂ max primite de la Garmin (secțiunea 1-9).
 
 Vom folosi aceste date Apple Health pentru a-ți arăta statistici legate de antrenamentele tale și pentru a-ți da indicații despre cum să te antrenezi.
 
@@ -41,10 +45,11 @@ Dacă activezi sincronizarea progresului (dezactivată implicit, disponibilă î
 - Valorile VO₂ max și data măsurătorii
 - Minutele săptămânale de antrenament pe categorii (Zona 2, VO₂ max, forță și mobilitate)
 - Seriile de antrenament (streaks) și realizările deblocate
-- Profilul de antrenament: vârsta, pulsul maxim estimat, limitele zonelor de puls și ținta săptămânală
+- Profilul de antrenament: numele, vârsta, pulsul maxim (estimat, măsurat sau introdus de tine), limitele zonelor de puls pentru alergare și ciclism, nivelul de intensitate și volumul recent, ținta săptămânală, fusul orar al telefonului și o copie a limitelor de puls pe care le-ai setat sau acceptat, ca să le regăsești pe un telefon nou
+- Pentru fiecare săptămână: dacă ținta a fost atinsă și ce antrenament a contat pentru fiecare sesiune planificată
 
 **Antrenamente individuale din ultimele 6 luni:**
-- Rezumatul fiecărui antrenament: tipul, data și durata, categoria și minutele pe categorii, distanța, pulsul mediu și maxim, caloriile, ritmul, diferența de nivel, rezultatul față de țintă, parcursul pe kilometri, intervalele pe zone și pauzele
+- Rezumatul fiecărui antrenament: tipul, data, ora locală și durata, categoria și minutele pe categorii, distanța, pulsul mediu și maxim, caloriile, ritmul, diferența de nivel, rezultatul față de țintă, parcursul pe kilometri, intervalele pe zone și pauzele, dacă a fost introdus manual și dacă continuă un antrenament anterior (de exemplu o încălzire)
 - Seria de puls a antrenamentului (cu o limită de puncte per antrenament)
 - Traseul GPS (latitudine, longitudine, altitudine), dacă antrenamentul are unul
 - Seria de distanță a antrenamentului
@@ -55,7 +60,7 @@ Aceste date sunt stocate în Firebase Firestore (Google) și sunt asociate contu
 - Sincronizarea are loc doar după consimțământul tău explicit, exprimat în aplicație (baza legală: art. 9 alin. (2) lit. (a) GDPR — consimțământ explicit pentru date privind sănătatea).
 - Antrenamentele mai vechi de 6 luni, precum și cele șterse din Apple Health, sunt eliminate de pe servere la următoarea sincronizare.
 - Datele citite din Strava (secțiunea 1-7) nu fac parte din această sincronizare.
-- Poți retrage consimțământul oricând din aceeași secțiune a aplicației; la retragere, toate datele sincronizate sunt șterse de pe servere.
+- Poți retrage consimțământul oricând din aceeași secțiune a aplicației; la retragere, toate datele sincronizate sunt șterse de pe servere, iar conexiunile cu Claude sunt deconectate. Retragerea făcută pe un dispozitiv se aplică și celorlalte dispozitive ale contului.
 
 ## 1-3. Date Forță și Mobilitate
 
@@ -65,6 +70,8 @@ Vom folosi aceste date pentru a-ți arăta statistici legate de antrenamentele t
 
 Nu vom folosi datele tale de Forță și Mobilitate în scopuri de marketing. Datele tale vor fi accesate doar local de pe dispozitivul tău și vor fi stocate de aplicație. Datele tale nu vor fi transmise către serverele noastre. Datele vor fi șterse la dezinstalarea aplicației.
 
+La fel rămân doar pe dispozitiv: jurnalul de forță (seriile înregistrate și cât de greu a fost), răspunsurile la „Cum te simți azi” și starea de accidentare sau boală pe care o marchezi în aplicație, inclusiv perioadele în care a fost activă. Acestea nu ajung pe serverele noastre și nici la Claude.
+
 ## 1-4. Colectarea de Date de Utilizare și Analiză
 
 Aplicația folosește Firebase Analytics (furnizat de Google) pentru a înțelege cum este utilizată aplicația și pentru a îmbunătăți experiența utilizatorilor.
@@ -72,7 +79,7 @@ Aplicația folosește Firebase Analytics (furnizat de Google) pentru a înțeleg
 **Date colectate automat:**
 - Evenimentele de autentificare (înregistrare și autentificare prin Apple/Google)
 - Paginile vizitate în aplicație (Weekly, Plan, Analysis, Profile)
-- Pașii parcurși în configurarea inițială și răspunsurile la două întrebări din chestionar (cum resimți antrenamentul și ce te împiedică să te antrenezi)
+- Pașii parcurși în configurarea inițială și răspunsurile la trei întrebări din chestionar (cum resimți antrenamentul, ce te împiedică să te antrenezi și pentru ce te antrenezi)
 - Achizițiile de abonamente premium
 - Starea abonamentului (utilizator gratuit sau premium)
 - Identificator unic de utilizator (Firebase UID) și identificatorul instalării aplicației
@@ -93,8 +100,10 @@ La crearea contului (prin Apple Sign-In sau Google Sign-In), stocăm în Firebas
 
 - Adresa de email și numele afișat
 - Data creării contului și data ultimei autentificări
-- Răspunsurile tale la chestionarul inițial (nivel de activitate, obiective de sănătate)
+- Răspunsurile tale la chestionarul inițial (nivel de activitate, pentru ce te antrenezi, zilele și sporturile alese)
 - Planul tău de antrenament și istoricul modificărilor acestuia
+- Setările de antrenament: obiectivul (de exemplu o cursă și data ei), testele și cursele cu rezultatele lor și ritmurile calculate din ele, felul planului și motivul lui, regulile planului (săptămânile de recuperare, sesiunile importante), obiceiurile zilnice și săptămânile flexibile
+- Propunerile primite de la Claude și răspunsul tău la ele (secțiunea 1-8)
 - Starea abonamentului premium
 
 Aceste date sunt folosite pentru funcționarea contului, sincronizarea între dispozitive și verificarea abonamentului. Ele sunt șterse la ștergerea contului din aplicație, cu o singură excepție: pentru a preveni folosirea repetată a perioadei de probă gratuite, păstrăm o amprentă criptografică (hash SHA-256) a adresei tale de email, împreună cu data la care ai folosit perioada de probă. Din această amprentă adresa de email nu poate fi reconstituită; ea servește doar pentru a recunoaște aceeași adresă la o nouă înregistrare (baza legală: interesul legitim de a preveni abuzul).
@@ -121,12 +130,12 @@ Datele trimise către Strava sunt procesate conform politicii de confidențialit
 
 Poți conecta asistentul Claude (dezvoltat de Anthropic) la contul tău Movitalis, ca să-i poți pune întrebări despre antrenamentele tale. Conexiunea pornește din Claude și devine activă doar după ce o aprobi explicit în aplicația Movitalis.
 
-- Claude are acces **la citire** la datele sincronizate în contul tău (secțiunea 1-2): profilul de antrenament și antrenamentele din ultimele 6 luni. Nu poate modifica sau șterge aceste date.
-- Dacă aprobi și această permisiune la conectare, Claude îți poate **propune un plan de antrenament**. Propunerea (zilele, tipul, durata, titlul și notițele antrenamentelor) este salvată în contul tău ca ciornă și nu schimbă nimic până nu o accepți tu în aplicație; o poți modifica sau respinge, iar la acceptare sau respingere ciorna este ștearsă. Conexiunile aprobate înainte de introducerea acestei permisiuni rămân doar în citire.
+- Claude are acces **la citire** la: datele sincronizate (secțiunea 1-2) — profilul de antrenament, minutele și țintele săptămânale, seriile și realizările, valorile VO₂ max și antrenamentele din ultimele 6 luni, cu pulsul și traseul GPS — și la setările de antrenament din contul tău (secțiunea 1-5): obiectivul, testele și cursele, planul și regulile lui, obiceiurile zilnice, zilele și sporturile alese. Nu poate modifica sau șterge aceste date. Nu vede starea de accidentare sau boală și nici jurnalul păstrat doar pe dispozitiv (secțiunea 1-3).
+- Dacă pagina de aprobare din aplicație arată că Claude poate face și propuneri, el îți poate **propune**: un plan de antrenament, mutarea, schimbarea sau sărirea unei sesiuni, felul planului și regulile lui, limitele zonelor de puls și pulsul maxim. Fiecare propunere este salvată în contul tău și nu schimbă nimic până nu o accepți tu în aplicație; o poți și refuza. Conexiunile aprobate fără această permisiune rămân doar în citire.
 - Datele sunt citite doar când pui o întrebare în Claude; prelucrarea lor de către Anthropic este guvernată de politica de confidențialitate Anthropic și de setările contului tău Claude.
 - Datele citite din Strava nu sunt niciodată transmise către Claude.
-- **Declarație de transparență privind inteligența artificială:** Claude este un sistem de inteligență artificială. Dacă ai conectat Garmin Connect™ (secțiunea 1-9), antrenamentele sincronizate pot include date provenite de la dispozitivele Garmin (pulsul, pauzele, traseul), marcate ca atare. Claude le prelucrează doar după consimțământul tău explicit (aprobarea conexiunii în aplicație) și doar pentru a-ți răspunde la întrebări; nici Movitalis, nici datele tale nu sunt folosite pentru antrenarea modelelor de inteligență artificială. Îți poți retrage consimțământul oricând, cu un singur pas: Profil → Detalii cont → Claude → Revocă.
-- Poți revoca accesul oricând (Profil → Detalii cont → Claude); revocarea, retragerea consimțământului pentru sincronizare sau ștergerea contului șterg tokenurile de acces.
+- **Declarație de transparență privind inteligența artificială:** Claude este un sistem de inteligență artificială. Dacă ai conectat Garmin Connect™ (secțiunea 1-9), antrenamentele sincronizate pot include date provenite de la dispozitivele Garmin (pulsul, pauzele, traseul), marcate ca atare. Claude le prelucrează doar după consimțământul tău explicit (aprobarea conexiunii în aplicație) și doar pentru a-ți răspunde la întrebări; nici Movitalis, nici datele tale nu sunt folosite pentru antrenarea modelelor de inteligență artificială. Îți poți retrage consimțământul oricând, cu un singur pas: Profil → Integrări → Claude → Deconectează.
+- Poți deconecta Claude oricând (Profil → Integrări → Claude → Deconectează); deconectarea, retragerea consimțământului pentru sincronizare (secțiunea 1-2) sau ștergerea contului șterg tokenurile de acces.
 
 ## 1-9. Integrarea cu Garmin Connect™ (opțională)
 
@@ -176,7 +185,7 @@ Aceste servicii pot colecta date conform propriilor politici de confidențialita
 - **Resend**: adresa de email și numele afișat, pentru comunicări prin email
 - **Facebook (Meta)** (doar dacă permiți urmărirea): evenimentele de utilizare și de achiziție descrise în secțiunea 1-10 (pentru măsurarea reclamelor); nu primește date Apple Health, date Garmin, numele sau adresa ta de email
 - **Strava** (doar dacă îți conectezi contul): antrenamentele înregistrate cu Movitalis, inclusiv pulsul și traseul GPS (secțiunea 1-7)
-- **Claude / Anthropic** (doar dacă aprobi conexiunea): antrenamentele și profilul de antrenament sincronizate (secțiunea 1-8), citite la cererea ta, inclusiv datele Garmin marcate ca atare dacă ai conectat Garmin Connect™
+- **Claude / Anthropic** (doar dacă aprobi conexiunea): antrenamentele și profilul de antrenament sincronizate și setările de antrenament (secțiunea 1-8), citite la cererea ta, inclusiv datele Garmin marcate ca atare dacă ai conectat Garmin Connect™
 - **Garmin**: nu trimitem date către Garmin; doar primim de la Garmin activitățile pe care alegi să le partajezi (secțiunea 1-9)
 
 **Important:** Datele Apple Health rămân pe dispozitivul tău, cu excepția celor pe care alegi tu să le trimiți: datele de sănătate sincronizate (secțiunea 1-2, doar cu consimțământul tău explicit), antrenamentele trimise în contul tău Strava (secțiunea 1-7) și citirea datelor sincronizate de către integrările pe care le aprobi (secțiunea 1-8). Nu vindem datele tale și nu le folosim în scopuri de marketing.
@@ -185,10 +194,10 @@ Aceste servicii pot colecta date conform propriilor politici de confidențialita
 
 - **Datele Apple Health**: stocate local, șterse la dezinstalare
 - **Datele de sănătate sincronizate (secțiunea 1-2)**: antrenamentele individuale pentru o perioadă mobilă de 6 luni; toate datele sincronizate, până la retragerea consimțământului sau ștergerea contului — oricare survine prima
-- **Conexiunile cu integrări (Claude)**: tokenurile de acces sunt șterse la revocarea conexiunii sau la ștergerea contului; un plan propus rămas neacceptat este șters la acceptare, la respingere sau la ștergerea contului
+- **Conexiunile cu integrări (Claude)**: tokenurile de acces sunt șterse la deconectare, la retragerea consimțământului pentru sincronizare sau la ștergerea contului; un plan propus este șters după ce îl accepți sau îl refuzi, iar din el rămâne doar răspunsul tău (acceptat sau refuzat), ca să-l poată citi Claude; celelalte propuneri rămân în cont, cu răspunsul tău, până la ștergerea contului
 - **Datele primite de la Garmin (secțiunea 1-9)**: cel mult 6 luni de la data fiecărei activități, pe servere și pe dispozitiv; șterse imediat la deconectare, la retragerea permisiunii în Garmin Connect™ sau la ștergerea contului, împreună cu tokenurile de acces
 - **Amprenta (hash) adresei de email pentru perioada de probă**: reținută și după ștergerea contului, pentru prevenirea abuzului (secțiunea 1-5)
-- **Datele Firebase (autentificare, premium status, chestionar, plan de antrenament)**: reținute până la ștergerea contului
+- **Datele Firebase (autentificare, premium status, chestionar, plan și setări de antrenament)**: reținute până la ștergerea contului
 - **Datele RevenueCat (istoric achiziții)**: reținute conform politicii RevenueCat, sub identificatorul contului; după ștergerea contului acest identificator nu mai duce la nicio altă informație despre tine, iar la cerere (adresa de contact) ștergem și această înregistrare
 - **Adresa de email (Resend)**: reținută până la dezabonare sau ștergerea contului
 - **Datele de analiză**: reținute conform politicii Firebase (maxim 14 luni pentru rapoarte)
@@ -204,7 +213,7 @@ Securitatea informațiilor tale este importantă pentru noi, dar nicio modalitat
 - Poți șterge contul tău și datele asociate direct din aplicație (Profil → Detalii cont → Șterge contul); ștergerea include datele din Firebase, datele de sănătate sincronizate, conexiunile cu integrări și adresa din lista de emailuri (rămâne doar amprenta descrisă în secțiunea 1-5)
 - Poți exporta datele stocate în contul tău direct din aplicație (Profil → Detalii cont → Exportă datele mele)
 - Poți retrage oricând consimțământul pentru sincronizarea datelor de sănătate (Profil → Detalii cont → Sincronizare progres); datele sincronizate vor fi șterse de pe servere
-- Poți revoca oricând accesul unei integrări (Profil → Detalii cont → Claude)
+- Poți deconecta oricând o integrare (Profil → Integrări → Claude → Deconectează)
 - Poți deconecta Strava oricând (Profil → Strava → Deconectează Strava); accesul aplicației este revocat
 - Poți deconecta Garmin Connect™ oricând (Profil → Garmin Connect™ → Deconectează sau din Garmin Connect™ → Setări → Aplicații conectate); datele primite de la Garmin sunt șterse de pe servere și de pe dispozitiv. Poți cere oricând o copie a lor, corectarea sau ștergerea lor la adresa de contact
 - Datele de analiză sunt pseudonimizate: sunt legate de identificatorul contului tău, nu de numele sau adresa ta de email. Le poți opri oricând din aplicație (Profil → Detalii cont → Statistici de utilizare) și poți cere ștergerea lor la adresa de contact
